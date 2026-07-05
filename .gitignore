@@ -1,0 +1,44 @@
+# ── Credentials & secrets ─────────────────────────────────────────────────────
+.env
+*.pem
+*.key
+
+# ── Virtual environment (non-standard target layout) ──────────────────────────
+.venv/
+
+# ── Pipeline output ───────────────────────────────────────────────────────────
+output/
+test_docs/
+
+# ── Python cache ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Build / dist ──────────────────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ── VS Code ───────────────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Temp / staging ────────────────────────────────────────────────────────────
+*.tmp
+*.bak
+last_job_id.txt
+last_jobs.txt
+enterprise_result.md

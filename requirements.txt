@@ -1,0 +1,9 @@
+docling
+pillow
+boto3
+python-dotenv
+fastapi
+uvicorn[standard]
+python-multipart
+pandas
+aiofiles

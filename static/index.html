@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>DocFlow — Word to Markdown Pipeline</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0d14;--surface:#111827;--surface2:#1a2234;--border:#1f2d45;
+  --accent:#3b82f6;--accent2:#8b5cf6;--success:#10b981;--warn:#f59e0b;--error:#ef4444;
+  --text:#f1f5f9;--muted:#64748b;--subtle:#94a3b8;
+  --glow:0 0 40px rgba(59,130,246,.18);
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+
+/* Background gradient orbs */
+body::before,body::after{content:'';position:fixed;border-radius:50%;filter:blur(120px);pointer-events:none;z-index:0}
+body::before{width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,.12),transparent 70%);top:-200px;left:-100px}
+body::after{width:500px;height:500px;background:radial-gradient(circle,rgba(139,92,246,.1),transparent 70%);bottom:-150px;right:-100px}
+
+.container{max-width:900px;margin:0 auto;padding:2rem 1.5rem;position:relative;z-index:1}
+
+/* Header */
+header{text-align:center;margin-bottom:3rem}
+.logo{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.2rem}
+.logo-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:12px;display:grid;place-items:center;font-size:1.4rem;box-shadow:var(--glow)}
+h1{font-size:2.4rem;font-weight:700;background:linear-gradient(135deg,#fff 30%,#94a3b8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.subtitle{color:var(--muted);margin-top:.5rem;font-size:.95rem}
+
+/* Badges */
+.badges{display:flex;gap:.6rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.badge{padding:.25rem .75rem;border-radius:999px;font-size:.75rem;font-weight:500;border:1px solid}
+.badge-blue{background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.3);color:#93c5fd}
+.badge-purple{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3);color:#c4b5fd}
+.badge-green{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.3);color:#6ee7b7}
+
+/* Card */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem;margin-bottom:1.5rem;backdrop-filter:blur(10px)}
+
+/* Drop zone */
+#drop-zone{border:2px dashed var(--border);border-radius:12px;padding:3rem 2rem;text-align:center;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
+#drop-zone::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(59,130,246,.04),rgba(139,92,246,.04));opacity:0;transition:opacity .3s}
+#drop-zone:hover,#drop-zone.drag-over{border-color:var(--accent);background:rgba(59,130,246,.05)}
+#drop-zone:hover::before,#drop-zone.drag-over::before{opacity:1}
+#drop-zone.drag-over{transform:scale(1.01)}
+.drop-icon{font-size:3rem;margin-bottom:1rem;display:block;filter:drop-shadow(0 0 12px rgba(59,130,246,.4))}
+.drop-title{font-size:1.1rem;font-weight:600;margin-bottom:.4rem}
+.drop-sub{color:var(--muted);font-size:.875rem}
+.drop-formats{margin-top:.75rem;font-size:.75rem;color:var(--accent);font-weight:500}
+#file-input{display:none}
+
+/* File selected state */
+#selected-file{display:none;align-items:center;gap:1rem;padding:1rem 1.25rem;background:var(--surface2);border:1px solid var(--border);border-radius:10px;margin-top:1rem}
+#selected-file .file-icon{font-size:1.5rem}
+#selected-file .file-info{flex:1;min-width:0}
+#selected-file .file-name{font-weight:600;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#selected-file .file-size{font-size:.78rem;color:var(--muted);margin-top:.15rem}
+#selected-file .remove-btn{background:none;border:none;color:var(--muted);cursor:pointer;font-size:1.2rem;padding:.25rem;border-radius:6px;transition:color .2s}
+#selected-file .remove-btn:hover{color:var(--error)}
+
+/* Options */
+.options-row{display:flex;gap:1rem;margin-top:1.25rem;flex-wrap:wrap}
+.toggle-group{display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;cursor:pointer;user-select:none;transition:border-color .2s}
+.toggle-group:hover{border-color:var(--accent)}
+.toggle-group input[type=checkbox]{accent-color:var(--accent);width:16px;height:16px}
+.toggle-label{font-size:.85rem;font-weight:500}
+.toggle-sub{font-size:.73rem;color:var(--muted)}
+
+/* Upload button */
+#upload-btn{width:100%;margin-top:1.25rem;padding:.9rem;background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;border-radius:10px;color:#fff;font-size:1rem;font-weight:600;cursor:pointer;transition:all .3s;letter-spacing:.01em;position:relative;overflow:hidden}
+#upload-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.1),transparent);opacity:0;transition:opacity .2s}
+#upload-btn:hover:not(:disabled)::after{opacity:1}
+#upload-btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 8px 30px rgba(59,130,246,.35)}
+#upload-btn:active:not(:disabled){transform:translateY(0)}
+#upload-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+/* Progress */
+#progress-section{display:none}
+.progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
+.progress-label{font-weight:600;font-size:.9rem}
+.progress-bar-wrap{height:6px;background:var(--surface2);border-radius:999px;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:999px;width:0;transition:width .4s ease;animation:shimmer 1.5s infinite}
+@keyframes shimmer{0%{filter:brightness(1)}50%{filter:brightness(1.3)}100%{filter:brightness(1)}}
+.status-steps{margin-top:1rem;display:flex;flex-direction:column;gap:.6rem}
+.step{display:flex;align-items:center;gap:.75rem;font-size:.85rem;color:var(--muted);transition:color .3s}
+.step.active{color:var(--text)}
+.step.done{color:var(--success)}
+.step-dot{width:8px;height:8px;border-radius:50%;background:var(--border);flex-shrink:0;transition:background .3s}
+.step.active .step-dot{background:var(--accent);animation:pulse 1s infinite}
+.step.done .step-dot{background:var(--success)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* Result */
+#result-section{display:none}
+.result-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.25rem}
+.result-title{font-size:1.1rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
+.result-stats{display:flex;gap.6rem;flex-wrap:wrap;gap:.6rem}
+.stat-chip{padding:.3rem .75rem;border-radius:8px;font-size:.78rem;font-weight:600;background:var(--surface2);border:1px solid var(--border)}
+.btn-group{display:flex;gap:.6rem;flex-wrap:wrap}
+.btn{padding:.55rem 1.1rem;border-radius:8px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s;border:1px solid;display:inline-flex;align-items:center;gap:.4rem}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-primary:hover{background:#2563eb}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--subtle)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--text)}
+
+/* Markdown preview */
+.md-preview-wrap{background:var(--surface2);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.md-preview-header{padding:.65rem 1rem;border-bottom:1px solid var(--border);font-size:.78rem;font-weight:600;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+#md-preview{padding:1.25rem;font-family:'Inter',monospace;font-size:.83rem;line-height:1.65;color:var(--subtle);white-space:pre-wrap;word-break:break-word;max-height:400px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+
+/* Error */
+.error-box{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:10px;padding:1rem 1.25rem;color:#fca5a5;font-size:.875rem;display:flex;gap:.75rem;align-items:flex-start}
+
+/* New file btn */
+#new-btn{display:none;width:100%;margin-top:1rem;padding:.75rem;background:transparent;border:1px solid var(--border);border-radius:10px;color:var(--subtle);font-size:.9rem;font-weight:500;cursor:pointer;transition:all .2s}
+#new-btn:hover{border-color:var(--accent);color:var(--text)}
+
+/* Footer */
+footer{text-align:center;margin-top:3rem;color:var(--muted);font-size:.78rem}
+footer span{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <div class="logo-icon">📄</div>
+    </div>
+    <h1>DocFlow Pipeline</h1>
+    <p class="subtitle">Upload Word documents · Extract structure · Generate Markdown</p>
+    <div class="badges">
+      <span class="badge badge-blue">AWS Bedrock Nova Lite</span>
+      <span class="badge badge-purple">Docling Parser</span>
+      <span class="badge badge-green">Local OCR · Tesseract</span>
+    </div>
+  </header>
+
+  <!-- Upload Card -->
+  <div class="card" id="upload-card">
+    <div id="drop-zone">
+      <span class="drop-icon">🗂️</span>
+      <div class="drop-title">Drop your Word document here</div>
+      <div class="drop-sub">or click to browse files</div>
+      <div class="drop-formats">.docx · .doc supported</div>
+      <input type="file" id="file-input" accept=".doc,.docx"/>
+    </div>
+
+    <div id="selected-file">
+      <span class="file-icon">📝</span>
+      <div class="file-info">
+        <div class="file-name" id="sel-name"></div>
+        <div class="file-size" id="sel-size"></div>
+      </div>
+      <button class="remove-btn" id="remove-btn" title="Remove">✕</button>
+    </div>
+
+    <div class="options-row">
+      <label class="toggle-group">
+        <input type="checkbox" id="opt-vlm" checked/>
+        <div>
+          <div class="toggle-label">🤖 AI Chart Analysis</div>
+          <div class="toggle-sub">Bedrock Nova Lite for charts</div>
+        </div>
+      </label>
+    </div>
+
+    <button id="upload-btn" disabled>Upload &amp; Process</button>
+  </div>
+
+  <!-- Progress Card -->
+  <div class="card" id="progress-section">
+    <div class="progress-header">
+      <span class="progress-label" id="prog-label">Processing document…</span>
+      <span style="font-size:.8rem;color:var(--muted)" id="prog-pct">0%</span>
+    </div>
+    <div class="progress-bar-wrap"><div class="progress-bar" id="prog-bar"></div></div>
+    <div class="status-steps">
+      <div class="step" id="step-upload"><span class="step-dot"></span>Uploading file</div>
+      <div class="step" id="step-parse"><span class="step-dot"></span>Docling structural parse</div>
+      <div class="step" id="step-ocr"><span class="step-dot"></span>OCR on embedded images</div>
+      <div class="step" id="step-vlm"><span class="step-dot"></span>AI chart analysis (Bedrock)</div>
+      <div class="step" id="step-md"><span class="step-dot"></span>Generating Markdown</div>
+    </div>
+  </div>
+
+  <!-- Result Card -->
+  <div class="card" id="result-section">
+    <div class="result-header">
+      <div class="result-title">✅ <span id="res-filename"></span></div>
+      <div class="result-stats">
+        <span class="stat-chip" id="stat-tables">📊 0 tables</span>
+        <span class="stat-chip" id="stat-images">🖼️ 0 images</span>
+      </div>
+    </div>
+    <div class="btn-group" style="margin-bottom:1.25rem">
+      <button class="btn btn-primary" id="dl-md-btn">⬇ Download Markdown</button>
+      <button class="btn btn-ghost" id="dl-json-btn">⬇ Semantic JSON</button>
+      <button class="btn btn-ghost" id="copy-btn">📋 Copy Markdown</button>
+    </div>
+    <div class="md-preview-wrap">
+      <div class="md-preview-header">
+        <span>Markdown Preview</span>
+        <span id="preview-chars"></span>
+      </div>
+      <pre id="md-preview"></pre>
+    </div>
+  </div>
+
+  <!-- Error -->
+  <div class="error-box" id="error-box" style="display:none">
+    <span>⚠️</span>
+    <div id="error-msg"></div>
+  </div>
+
+  <button id="new-btn">↩ Process another document</button>
+
+  <footer>Built with <span>AWS Bedrock Nova Lite</span> · Docling · Tesseract OCR</footer>
+</div>
+
+<script>
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+const selectedFile = document.getElementById('selected-file');
+const selName = document.getElementById('sel-name');
+const selSize = document.getElementById('sel-size');
+const removeBtn = document.getElementById('remove-btn');
+const uploadBtn = document.getElementById('upload-btn');
+const uploadCard = document.getElementById('upload-card');
+const progressSection = document.getElementById('progress-section');
+const resultSection = document.getElementById('result-section');
+const errorBox = document.getElementById('error-box');
+const errorMsg = document.getElementById('error-msg');
+const newBtn = document.getElementById('new-btn');
+const optVlm = document.getElementById('opt-vlm');
+
+let selectedFileObj = null;
+let pollInterval = null;
+let currentJobId = null;
+
+function formatBytes(b) {
+  if (b < 1024) return b + ' B';
+  if (b < 1024*1024) return (b/1024).toFixed(1) + ' KB';
+  return (b/1024/1024).toFixed(1) + ' MB';
+}
+
+function setFile(f) {
+  selectedFileObj = f;
+  selName.textContent = f.name;
+  selSize.textContent = formatBytes(f.size);
+  selectedFile.style.display = 'flex';
+  uploadBtn.disabled = false;
+}
+
+function clearFile() {
+  selectedFileObj = null;
+  fileInput.value = '';
+  selectedFile.style.display = 'none';
+  uploadBtn.disabled = true;
+}
+
+dropZone.addEventListener('click', () => fileInput.click());
+fileInput.addEventListener('change', e => { if(e.target.files[0]) setFile(e.target.files[0]); });
+removeBtn.addEventListener('click', e => { e.stopPropagation(); clearFile(); });
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+dropZone.addEventListener('drop', e => {
+  e.preventDefault(); dropZone.classList.remove('drag-over');
+  const f = e.dataTransfer.files[0];
+  if (f && (f.name.endsWith('.doc') || f.name.endsWith('.docx'))) setFile(f);
+  else showError('Please drop a .doc or .docx file.');
+});
+
+function setStep(id, state) {
+  const el = document.getElementById(id);
+  el.className = 'step ' + state;
+}
+function setProgress(pct, label) {
+  document.getElementById('prog-bar').style.width = pct + '%';
+  document.getElementById('prog-pct').textContent = pct + '%';
+  if (label) document.getElementById('prog-label').textContent = label;
+}
+
+function showError(msg) {
+  errorMsg.textContent = msg;
+  errorBox.style.display = 'flex';
+  progressSection.style.display = 'none';
+  uploadCard.style.display = 'block';
+  newBtn.style.display = 'block';
+  if (pollInterval) clearInterval(pollInterval);
+}
+
+function showResult(data) {
+  progressSection.style.display = 'none';
+  resultSection.style.display = 'block';
+  newBtn.style.display = 'block';
+  document.getElementById('res-filename').textContent = data.document || 'Document';
+  document.getElementById('stat-tables').textContent = `📊 ${data.tables_count ?? 0} tables`;
+  document.getElementById('stat-images').textContent = `🖼️ ${data.images_count ?? 0} images`;
+  const md = data.markdown_preview || '';
+  document.getElementById('md-preview').textContent = md;
+  document.getElementById('preview-chars').textContent = md.length + ' chars (preview)';
+}
+
+async function pollStatus(jobId) {
+  let fakeStep = 0;
+  const steps = ['step-upload','step-parse','step-ocr','step-vlm','step-md'];
+  const pcts  = [15, 35, 55, 75, 90];
+
+  pollInterval = setInterval(async () => {
+    // Animate fake progress steps while waiting
+    if (fakeStep < steps.length) {
+      if (fakeStep > 0) setStep(steps[fakeStep-1], 'done');
+      setStep(steps[fakeStep], 'active');
+      setProgress(pcts[fakeStep], 'Processing…');
+      fakeStep++;
+    }
+
+    try {
+      const res = await fetch(`/status/${jobId}`);
+      if (!res.ok) { showError(`Status check failed (HTTP ${res.status})`); clearInterval(pollInterval); return; }
+      const data = await res.json();
+
+      if (data.status === 'done') {
+        clearInterval(pollInterval);
+        steps.forEach(s => setStep(s, 'done'));
+        setProgress(100, 'Complete!');
+        setTimeout(() => showResult(data), 500);
+
+        // Wire download buttons
+        document.getElementById('dl-md-btn').onclick = () => window.location = `/download/${jobId}/markdown`;
+        document.getElementById('dl-json-btn').onclick = () => window.location = `/download/${jobId}/semantic`;
+        document.getElementById('copy-btn').onclick = () => {
+          navigator.clipboard.writeText(data.markdown_preview || '').then(() => {
+            document.getElementById('copy-btn').textContent = '✔ Copied!';
+            setTimeout(() => document.getElementById('copy-btn').textContent = '📋 Copy Markdown', 2000);
+          });
+        };
+      } else if (data.status === 'error') {
+        clearInterval(pollInterval);
+        showError(data.error || 'Pipeline error. Check server logs.');
+      }
+    } catch(e) {
+      clearInterval(pollInterval);
+      showError('Network error: ' + e.message);
+    }
+  }, 2500);
+}
+
+uploadBtn.addEventListener('click', async () => {
+  if (!selectedFileObj) return;
+
+  errorBox.style.display = 'none';
+  uploadCard.style.display = 'none';
+  progressSection.style.display = 'block';
+  resultSection.style.display = 'none';
+  newBtn.style.display = 'none';
+
+  ['step-upload','step-parse','step-ocr','step-vlm','step-md'].forEach(s => setStep(s,''));
+  setStep('step-upload','active');
+  setProgress(5, 'Uploading…');
+
+  const fd = new FormData();
+  fd.append('file', selectedFileObj);
+
+  try {
+    const res = await fetch('/upload', { method:'POST', body:fd });
+    const data = await res.json();
+    if (!res.ok) { showError(data.detail || 'Upload failed'); return; }
+    currentJobId = data.job_id;
+    setStep('step-upload','done');
+    setProgress(15, 'Queued — starting pipeline…');
+    pollStatus(currentJobId);
+  } catch(e) {
+    showError('Upload failed: ' + e.message);
+  }
+});
+
+newBtn.addEventListener('click', () => {
+  clearFile();
+  if (pollInterval) clearInterval(pollInterval);
+  uploadCard.style.display = 'block';
+  progressSection.style.display = 'none';
+  resultSection.style.display = 'none';
+  errorBox.style.display = 'none';
+  newBtn.style.display = 'none';
+  ['step-upload','step-parse','step-ocr','step-vlm','step-md'].forEach(s => setStep(s,''));
+});
+</script>
+</body>
+</html>

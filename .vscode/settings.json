@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "C:\\Python313\\python.exe",
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/.venv/Lib/site-packages"
+  ],
+  "python.analysis.autoImportCompletions": true
+}
