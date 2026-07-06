@@ -1,0 +1,73 @@
+uvicorn.exe test_router_app:app --host 0.0.0.0 --port 8001 --reload
+
+d81c5741-d0cf-41cf-bc64-d40782af06df
+
+
+Postman Setup — 4 Requests
+Request 1 — Upload the file ✅ Start here
+Field	Value
+Method	POST
+URL	http://localhost:8001/docx/upload
+Body tab	form-data
+Key	file → change type dropdown from Text to File
+Value	Browse → select your .docx file
+Click Send → copy the job_id from the response:
+
+json
+{
+  "job_id": "a3f9b2c1-...",
+  "status": "queued",
+  "message": "'MyReport.docx' queued..."
+}
+Request 2 — Poll status (repeat until "done")
+Field	Value
+Method	GET
+URL	http://localhost:8001/docx/status/PASTE_JOB_ID_HERE
+Keep clicking Send every few seconds. You'll see:
+
+json
+{ "status": "processing" }   ← still running
+{ "status": "done", "tables_count": 2, "images_count": 3, ... }  ← finished
+{ "status": "error", "error": "..." }  ← something went wrong
+Request 3 — Download the Markdown
+Field	Value
+Method	GET
+URL	http://localhost:8001/docx/download/PASTE_JOB_ID_HERE/markdown
+In Postman click "Save Response → Save to a file" to download MyReport.md
+
+Request 4 — Download the Semantic JSON
+Field	Value
+Method	GET
+URL	http://localhost:8001/docx/download/PASTE_JOB_ID_HERE/semantic
+Bonus — Swagger UI (all endpoints in browser)
+http://localhost:8001/docs
+You can test everything here too without Postman.
+
+Where Output Gets Stored
+After status = "done", check your file explorer:
+
+f:\Other\anti-gravity\uploads\
+└── MyReport\              ← folder named after your file
+    ├── MyReport.md
+    ├── MyReport.dom.json
+    ├── MyReport.semantic.json
+    └── images\
+        ├── picture_0.png
+        └── picture_1.png
+
+
+
+
+
+Docling reads uploads/_staging/a3f9-....docx
+      │
+      ├── extracts all text, tables, images
+      │
+      ├── Creates output folder:
+      │       uploads/MyReport/          ← named after the file stem
+      │
+      ├── Runs Textract OCR on each image
+      │
+      ├── Runs Bedrock Nova Lite on chart images
+      │
+      └── Writes all output files
