@@ -1,0 +1,2151 @@
+{
+  "document": "a230cc11-2072-4bf7-a3c9-c7809c9fa4b6.docx",
+  "schema_version": "1.0",
+  "num_pages": "<bound method DoclingDocument.num_pages of DoclingDocument(schema_name='DoclingDocument', version='1.10.0', name='a230cc11-2072-4bf7-a3c9-c7809c9fa4b6', origin=DocumentOrigin(mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document', binary_hash=8942170335123355562, filename='a230cc11-2072-4bf7-a3c9-c7809c9fa4b6.docx', uri=None), furniture=GroupItem(self_ref='#/furniture', parent=None, children=[], content_layer=<ContentLayer.FURNITURE: 'furniture'>, meta=None, name='_root_', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), body=GroupItem(self_ref='#/body', parent=None, children=[RefItem(cref='#/texts/0'), RefItem(cref='#/groups/1')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='_root_', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), groups=[ListGroup(self_ref='#/groups/0', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/2'), RefItem(cref='#/texts/3'), RefItem(cref='#/texts/4'), RefItem(cref='#/texts/5')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='list', label=<GroupLabel.LIST: 'list'>), GroupItem(self_ref='#/groups/1', parent=RefItem(cref='#/body'), children=[], content_layer=<ContentLayer.FURNITURE: 'furniture'>, meta=None, name='page footer', label=<GroupLabel.SECTION: 'section'>)], texts=[TitleItem(self_ref='#/texts/0', parent=RefItem(cref='#/body'), children=[RefItem(cref='#/texts/1'), RefItem(cref='#/groups/0'), RefItem(cref='#/texts/6'), RefItem(cref='#/texts/9'), RefItem(cref='#/texts/12'), RefItem(cref='#/texts/16'), RefItem(cref='#/texts/19')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TITLE: 'title'>, prov=[], source=[], comments=[], orig='Sample Table-Rich Document', text='Sample Table-Rich Document', formatting=None, hyperlink=None), TextItem(self_ref='#/texts/1', parent=RefItem(cref='#/texts/0'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='This document contains multiple tables of varying complexity for testing table parsing, data extraction, and document processing workflows.', text='This document contains multiple tables of varying complexity for testing table parsing, data extraction, and document processing workflows.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), ListItem(self_ref='#/texts/2', parent=RefItem(cref='#/groups/0'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='23', text='23', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='1.'), ListItem(self_ref='#/texts/3', parent=RefItem(cref='#/groups/0'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='24', text='24', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='2.'), ListItem(self_ref='#/texts/4', parent=RefItem(cref='#/groups/0'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='45', text='45', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='3.'), ListItem(self_ref='#/texts/5', parent=RefItem(cref='#/groups/0'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='56', text='56', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='4.'), SectionHeaderItem(self_ref='#/texts/6', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/7'), RefItem(cref='#/tables/0'), RefItem(cref='#/texts/8')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='1. Simple Data Table', text='1. Simple Data Table', formatting=None, hyperlink=None, level=1), TextItem(self_ref='#/texts/7', parent=RefItem(cref='#/texts/6'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='A basic table with headers and uniform data rows.', text='A basic table with headers and uniform data rows.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/8', parent=RefItem(cref='#/texts/6'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), SectionHeaderItem(self_ref='#/texts/9', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/10'), RefItem(cref='#/tables/1'), RefItem(cref='#/texts/11')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='2. Table with Merged Cells', text='2. Table with Merged Cells', formatting=None, hyperlink=None, level=1), TextItem(self_ref='#/texts/10', parent=RefItem(cref='#/texts/9'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='A table demonstrating horizontal and vertical cell merges.', text='A table demonstrating horizontal and vertical cell merges.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/11', parent=RefItem(cref='#/texts/9'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), SectionHeaderItem(self_ref='#/texts/12', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/13'), RefItem(cref='#/tables/2'), RefItem(cref='#/texts/14'), RefItem(cref='#/texts/15')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='3. Financial Summary Table', text='3. Financial Summary Table', formatting=None, hyperlink=None, level=1), TextItem(self_ref='#/texts/13', parent=RefItem(cref='#/texts/12'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='A table with numerical data formatted for financial reporting.', text='A table with numerical data formatted for financial reporting.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/14', parent=RefItem(cref='#/texts/12'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), TextItem(self_ref='#/texts/15', parent=RefItem(cref='#/texts/12'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), SectionHeaderItem(self_ref='#/texts/16', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/17'), RefItem(cref='#/tables/3'), RefItem(cref='#/texts/18')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='4. Employee Directory Table', text='4. Employee Directory Table', formatting=None, hyperlink=None, level=1), TextItem(self_ref='#/texts/17', parent=RefItem(cref='#/texts/16'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='A larger table simulating an employee directory with varied data types.', text='A larger table simulating an employee directory with varied data types.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/18', parent=RefItem(cref='#/texts/16'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), SectionHeaderItem(self_ref='#/texts/19', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/20'), RefItem(cref='#/tables/4'), RefItem(cref='#/texts/21'), RefItem(cref='#/texts/22')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='5. Feature Comparison Matrix', text='5. Feature Comparison Matrix', formatting=None, hyperlink=None, level=1), TextItem(self_ref='#/texts/20', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='A comparison table using checkmarks and crosses to indicate feature availability.', text='A comparison table using checkmarks and crosses to indicate feature availability.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/21', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), TextItem(self_ref='#/texts/22', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.FURNITURE: 'furniture'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='This sample DOCX file is provided by Sample-Files.com. Visit us for more sample files and resource.', text='This sample DOCX file is provided by Sample-Files.com. Visit us for more sample files and resource.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None)], pictures=[], tables=[TableItem(self_ref='#/tables/0', parent=RefItem(cref='#/texts/6'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TABLE: 'table'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=None, data=TableData(table_cells=[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Product', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Category', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Price ($)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Stock', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=4, end_col_offset_idx=5, text='Rating', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='Widget A', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='Electronics', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='29.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='150', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='4.5', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='Widget B', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='Electronics', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='49.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='85', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='4.2', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Gadget X', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='Accessories', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='14.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='300', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='4.8', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='Gadget Y', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='Accessories', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='19.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='220', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='4.1', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='Tool Pro', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='Hardware', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='89.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='45', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='4.7', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='Tool Lite', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='Hardware', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='39.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='120', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='4.3', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=0, end_col_offset_idx=1, text='Connector', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=1, end_col_offset_idx=2, text='Parts', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=2, end_col_offset_idx=3, text='4.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=3, end_col_offset_idx=4, text='500', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=4, end_col_offset_idx=5, text='4.0', column_header=False, row_header=False, row_section=False, fillable=False)], num_rows=8, num_cols=5, orientation=<Orientation.ROT_0: 'rot_0'>, grid=[[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Product', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Category', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Price ($)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Stock', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=4, end_col_offset_idx=5, text='Rating', column_header=True, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='Widget A', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='Electronics', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='29.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='150', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='4.5', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='Widget B', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='Electronics', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='49.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='85', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='4.2', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Gadget X', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='Accessories', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='14.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='300', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='4.8', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='Gadget Y', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='Accessories', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='19.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='220', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='4.1', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='Tool Pro', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='Hardware', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='89.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='45', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='4.7', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='Tool Lite', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='Hardware', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='39.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='120', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='4.3', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=0, end_col_offset_idx=1, text='Connector', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=1, end_col_offset_idx=2, text='Parts', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=2, end_col_offset_idx=3, text='4.99', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=3, end_col_offset_idx=4, text='500', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=4, end_col_offset_idx=5, text='4.0', column_header=False, row_header=False, row_section=False, fillable=False)]]), annotations=[]), TableItem(self_ref='#/tables/1', parent=RefItem(cref='#/texts/9'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TABLE: 'table'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=None, data=TableData(table_cells=[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Department', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Team', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Members', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Budget ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=3, col_span=1, start_row_offset_idx=1, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='Frontend', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='8', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='450', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='Backend', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='12', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='680', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='DevOps', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='5', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='320', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=2, col_span=1, start_row_offset_idx=4, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='Marketing', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='Digital', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='6', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='280', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='Content', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='4', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='150', column_header=False, row_header=False, row_section=False, fillable=False)], num_rows=6, num_cols=4, orientation=<Orientation.ROT_0: 'rot_0'>, grid=[[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Department', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Team', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Members', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Budget ($K)', column_header=True, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=3, col_span=1, start_row_offset_idx=1, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='Frontend', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='8', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='450', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=3, col_span=1, start_row_offset_idx=1, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='Backend', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='12', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='680', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=3, col_span=1, start_row_offset_idx=1, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='DevOps', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='5', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='320', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=2, col_span=1, start_row_offset_idx=4, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='Marketing', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='Digital', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='6', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='280', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=2, col_span=1, start_row_offset_idx=4, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='Marketing', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='Content', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='4', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='150', column_header=False, row_header=False, row_section=False, fillable=False)]]), annotations=[]), TableItem(self_ref='#/tables/2', parent=RefItem(cref='#/texts/12'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TABLE: 'table'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=None, data=TableData(table_cells=[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Quarter', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Revenue ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='COGS ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Gross Profit ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=4, end_col_offset_idx=5, text='OpEx ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=5, end_col_offset_idx=6, text='Net Income ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='Q1 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='1,245', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='498', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='747', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='412', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=5, end_col_offset_idx=6, text='335', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='Q2 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='1,380', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='552', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='828', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='425', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=5, end_col_offset_idx=6, text='403', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Q3 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='1,520', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='608', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='912', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='438', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=5, end_col_offset_idx=6, text='474', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='Q4 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='2,180', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='872', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='1,308', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='510', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=5, end_col_offset_idx=6, text='798', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='FY 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='6,325', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='2,530', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='3,795', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='1,785', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=5, end_col_offset_idx=6, text='2,010', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='YoY Growth', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='+18.5%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='+15.2%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='+21.3%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='+8.7%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=5, end_col_offset_idx=6, text='+34.1%', column_header=False, row_header=False, row_section=False, fillable=False)], num_rows=7, num_cols=6, orientation=<Orientation.ROT_0: 'rot_0'>, grid=[[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Quarter', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Revenue ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='COGS ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Gross Profit ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=4, end_col_offset_idx=5, text='OpEx ($K)', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=5, end_col_offset_idx=6, text='Net Income ($K)', column_header=True, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='Q1 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='1,245', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='498', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='747', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='412', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=5, end_col_offset_idx=6, text='335', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='Q2 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='1,380', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='552', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='828', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='425', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=5, end_col_offset_idx=6, text='403', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Q3 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='1,520', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='608', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='912', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='438', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=5, end_col_offset_idx=6, text='474', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='Q4 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='2,180', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='872', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='1,308', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='510', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=5, end_col_offset_idx=6, text='798', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='FY 2024', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='6,325', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='2,530', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='3,795', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='1,785', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=5, end_col_offset_idx=6, text='2,010', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='YoY Growth', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='+18.5%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='+15.2%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='+21.3%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='+8.7%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=5, end_col_offset_idx=6, text='+34.1%', column_header=False, row_header=False, row_section=False, fillable=False)]]), annotations=[]), TableItem(self_ref='#/tables/3', parent=RefItem(cref='#/texts/16'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TABLE: 'table'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=None, data=TableData(table_cells=[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='ID', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Name', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Department', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Title', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=4, end_col_offset_idx=5, text='Location', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=5, end_col_offset_idx=6, text='Start Date', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='E001', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='Alice Chen', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='Senior Developer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='San Francisco', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=5, end_col_offset_idx=6, text='2019-03-15', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='E002', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='Bob Martinez', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='Tech Lead', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='San Francisco', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=5, end_col_offset_idx=6, text='2017-08-01', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='E003', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='Carol Johnson', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='Marketing', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='Content Manager', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='New York', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=5, end_col_offset_idx=6, text='2020-01-10', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='E004', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='David Kim', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='DevOps Engineer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='Remote', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=5, end_col_offset_idx=6, text='2021-06-20', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='E005', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='Eva Patel', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='Sales', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='Account Executive', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='Chicago', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=5, end_col_offset_idx=6, text='2018-11-05', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='E006', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='Frank Liu', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='Frontend Developer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='San Francisco', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=5, end_col_offset_idx=6, text='2022-02-14', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=0, end_col_offset_idx=1, text='E007', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=1, end_col_offset_idx=2, text='Grace Williams', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=2, end_col_offset_idx=3, text='HR', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=3, end_col_offset_idx=4, text='HR Manager', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=4, end_col_offset_idx=5, text='New York', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=5, end_col_offset_idx=6, text='2016-09-30', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=0, end_col_offset_idx=1, text='E008', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=1, end_col_offset_idx=2, text='Henry Brown', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=2, end_col_offset_idx=3, text='Marketing', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=3, end_col_offset_idx=4, text='Digital Strategist', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=4, end_col_offset_idx=5, text='Remote', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=5, end_col_offset_idx=6, text='2021-04-12', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=0, end_col_offset_idx=1, text='E009', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=1, end_col_offset_idx=2, text='Iris Nakamura', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=3, end_col_offset_idx=4, text='Backend Developer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=4, end_col_offset_idx=5, text='San Francisco', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=5, end_col_offset_idx=6, text='2020-07-22', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=0, end_col_offset_idx=1, text='E010', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=1, end_col_offset_idx=2, text=\"James O'Brien\", column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=2, end_col_offset_idx=3, text='Finance', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=3, end_col_offset_idx=4, text='Financial Analyst', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=4, end_col_offset_idx=5, text='New York', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=5, end_col_offset_idx=6, text='2019-12-01', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=0, end_col_offset_idx=1, text='E011', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=1, end_col_offset_idx=2, text='Karen Singh', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=2, end_col_offset_idx=3, text='Sales', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=3, end_col_offset_idx=4, text='Sales Director', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=4, end_col_offset_idx=5, text='Chicago', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=5, end_col_offset_idx=6, text='2015-05-18', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=0, end_col_offset_idx=1, text='E012', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=1, end_col_offset_idx=2, text='Leo Costa', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=3, end_col_offset_idx=4, text='QA Engineer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=4, end_col_offset_idx=5, text='Remote', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=5, end_col_offset_idx=6, text='2023-01-09', column_header=False, row_header=False, row_section=False, fillable=False)], num_rows=13, num_cols=6, orientation=<Orientation.ROT_0: 'rot_0'>, grid=[[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='ID', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Name', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Department', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Title', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=4, end_col_offset_idx=5, text='Location', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=5, end_col_offset_idx=6, text='Start Date', column_header=True, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='E001', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='Alice Chen', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='Senior Developer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='San Francisco', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=5, end_col_offset_idx=6, text='2019-03-15', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='E002', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='Bob Martinez', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='Tech Lead', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='San Francisco', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=5, end_col_offset_idx=6, text='2017-08-01', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='E003', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='Carol Johnson', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='Marketing', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='Content Manager', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='New York', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=5, end_col_offset_idx=6, text='2020-01-10', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='E004', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='David Kim', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='DevOps Engineer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='Remote', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=5, end_col_offset_idx=6, text='2021-06-20', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='E005', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='Eva Patel', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='Sales', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='Account Executive', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='Chicago', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=5, end_col_offset_idx=6, text='2018-11-05', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='E006', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='Frank Liu', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='Frontend Developer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='San Francisco', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=5, end_col_offset_idx=6, text='2022-02-14', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=0, end_col_offset_idx=1, text='E007', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=1, end_col_offset_idx=2, text='Grace Williams', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=2, end_col_offset_idx=3, text='HR', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=3, end_col_offset_idx=4, text='HR Manager', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=4, end_col_offset_idx=5, text='New York', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=5, end_col_offset_idx=6, text='2016-09-30', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=0, end_col_offset_idx=1, text='E008', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=1, end_col_offset_idx=2, text='Henry Brown', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=2, end_col_offset_idx=3, text='Marketing', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=3, end_col_offset_idx=4, text='Digital Strategist', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=4, end_col_offset_idx=5, text='Remote', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=5, end_col_offset_idx=6, text='2021-04-12', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=0, end_col_offset_idx=1, text='E009', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=1, end_col_offset_idx=2, text='Iris Nakamura', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=3, end_col_offset_idx=4, text='Backend Developer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=4, end_col_offset_idx=5, text='San Francisco', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=9, end_row_offset_idx=10, start_col_offset_idx=5, end_col_offset_idx=6, text='2020-07-22', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=0, end_col_offset_idx=1, text='E010', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=1, end_col_offset_idx=2, text=\"James O'Brien\", column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=2, end_col_offset_idx=3, text='Finance', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=3, end_col_offset_idx=4, text='Financial Analyst', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=4, end_col_offset_idx=5, text='New York', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=10, end_row_offset_idx=11, start_col_offset_idx=5, end_col_offset_idx=6, text='2019-12-01', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=0, end_col_offset_idx=1, text='E011', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=1, end_col_offset_idx=2, text='Karen Singh', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=2, end_col_offset_idx=3, text='Sales', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=3, end_col_offset_idx=4, text='Sales Director', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=4, end_col_offset_idx=5, text='Chicago', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=11, end_row_offset_idx=12, start_col_offset_idx=5, end_col_offset_idx=6, text='2015-05-18', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=0, end_col_offset_idx=1, text='E012', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=1, end_col_offset_idx=2, text='Leo Costa', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=2, end_col_offset_idx=3, text='Engineering', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=3, end_col_offset_idx=4, text='QA Engineer', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=4, end_col_offset_idx=5, text='Remote', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=12, end_row_offset_idx=13, start_col_offset_idx=5, end_col_offset_idx=6, text='2023-01-09', column_header=False, row_header=False, row_section=False, fillable=False)]]), annotations=[]), TableItem(self_ref='#/tables/4', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TABLE: 'table'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=None, data=TableData(table_cells=[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Feature', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Free Plan', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Pro Plan', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Business Plan', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=4, end_col_offset_idx=5, text='Enterprise', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='File Storage', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='5 GB', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='50 GB', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='500 GB', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='Unlimited', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='Users', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='1', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='5', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='25', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='Unlimited', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='API Access', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='Priority Support', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='Custom Branding', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='SSO Integration', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=0, end_col_offset_idx=1, text='SLA Guarantee', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=3, end_col_offset_idx=4, text='99.9%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=4, end_col_offset_idx=5, text='99.99%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=0, end_col_offset_idx=1, text='Dedicated Manager', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=3, end_col_offset_idx=4, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False)], num_rows=9, num_cols=5, orientation=<Orientation.ROT_0: 'rot_0'>, grid=[[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Feature', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Free Plan', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Pro Plan', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=4, text='Business Plan', column_header=True, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=4, end_col_offset_idx=5, text='Enterprise', column_header=True, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='File Storage', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='5 GB', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='50 GB', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='500 GB', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='Unlimited', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='Users', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='1', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='5', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='25', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='Unlimited', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='API Access', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='Priority Support', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='Custom Branding', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='✓', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='SSO Integration', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=0, end_col_offset_idx=1, text='SLA Guarantee', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=3, end_col_offset_idx=4, text='99.9%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=7, end_row_offset_idx=8, start_col_offset_idx=4, end_col_offset_idx=5, text='99.99%', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=0, end_col_offset_idx=1, text='Dedicated Manager', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=1, end_col_offset_idx=2, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=2, end_col_offset_idx=3, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=3, end_col_offset_idx=4, text='—', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=8, end_row_offset_idx=9, start_col_offset_idx=4, end_col_offset_idx=5, text='✓', column_header=False, row_header=False, row_section=False, fillable=False)]]), annotations=[])], key_value_items=[], form_items=[], field_regions=[], field_items=[], pages={})>",
+  "text_blocks_count": 23,
+  "tables": [
+    {
+      "table_index": 0,
+      "caption": null,
+      "page": null,
+      "num_rows": 8,
+      "num_cols": 5,
+      "flattened_records": [
+        {
+          "Product": "Widget A",
+          "Category": "Electronics",
+          "Price ($)": "29.99",
+          "Stock": "150",
+          "Rating": "4.5"
+        },
+        {
+          "Product": "Widget B",
+          "Category": "Electronics",
+          "Price ($)": "49.99",
+          "Stock": "85",
+          "Rating": "4.2"
+        },
+        {
+          "Product": "Gadget X",
+          "Category": "Accessories",
+          "Price ($)": "14.99",
+          "Stock": "300",
+          "Rating": "4.8"
+        },
+        {
+          "Product": "Gadget Y",
+          "Category": "Accessories",
+          "Price ($)": "19.99",
+          "Stock": "220",
+          "Rating": "4.1"
+        },
+        {
+          "Product": "Tool Pro",
+          "Category": "Hardware",
+          "Price ($)": "89.99",
+          "Stock": "45",
+          "Rating": "4.7"
+        },
+        {
+          "Product": "Tool Lite",
+          "Category": "Hardware",
+          "Price ($)": "39.99",
+          "Stock": "120",
+          "Rating": "4.3"
+        },
+        {
+          "Product": "Connector",
+          "Category": "Parts",
+          "Price ($)": "4.99",
+          "Stock": "500",
+          "Rating": "4.0"
+        }
+      ],
+      "raw_cells": [
+        {
+          "text": "Product",
+          "row": 0,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Category",
+          "row": 0,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Price ($)",
+          "row": 0,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Stock",
+          "row": 0,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Rating",
+          "row": 0,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Widget A",
+          "row": 1,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Electronics",
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "29.99",
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "150",
+          "row": 1,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4.5",
+          "row": 1,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Widget B",
+          "row": 2,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Electronics",
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "49.99",
+          "row": 2,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "85",
+          "row": 2,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4.2",
+          "row": 2,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Gadget X",
+          "row": 3,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Accessories",
+          "row": 3,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "14.99",
+          "row": 3,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "300",
+          "row": 3,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4.8",
+          "row": 3,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Gadget Y",
+          "row": 4,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Accessories",
+          "row": 4,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "19.99",
+          "row": 4,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "220",
+          "row": 4,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4.1",
+          "row": 4,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Tool Pro",
+          "row": 5,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Hardware",
+          "row": 5,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "89.99",
+          "row": 5,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "45",
+          "row": 5,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4.7",
+          "row": 5,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Tool Lite",
+          "row": 6,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Hardware",
+          "row": 6,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "39.99",
+          "row": 6,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "120",
+          "row": 6,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4.3",
+          "row": 6,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Connector",
+          "row": 7,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Parts",
+          "row": 7,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4.99",
+          "row": 7,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "500",
+          "row": 7,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4.0",
+          "row": 7,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        }
+      ]
+    },
+    {
+      "table_index": 1,
+      "caption": null,
+      "page": null,
+      "num_rows": 6,
+      "num_cols": 4,
+      "flattened_records": [
+        {
+          "Department": "Engineering",
+          "Team": "Frontend",
+          "Members": "8",
+          "Budget ($K)": "450"
+        },
+        {
+          "Department": "Engineering",
+          "Team": "Backend",
+          "Members": "12",
+          "Budget ($K)": "680"
+        },
+        {
+          "Department": "Engineering",
+          "Team": "DevOps",
+          "Members": "5",
+          "Budget ($K)": "320"
+        },
+        {
+          "Department": "Marketing",
+          "Team": "Digital",
+          "Members": "6",
+          "Budget ($K)": "280"
+        },
+        {
+          "Department": "Marketing",
+          "Team": "Content",
+          "Members": "4",
+          "Budget ($K)": "150"
+        }
+      ],
+      "raw_cells": [
+        {
+          "text": "Department",
+          "row": 0,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Team",
+          "row": 0,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Members",
+          "row": 0,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Budget ($K)",
+          "row": 0,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Engineering",
+          "row": 1,
+          "col": 0,
+          "row_span": 3,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Frontend",
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "8",
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "450",
+          "row": 1,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Backend",
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "12",
+          "row": 2,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "680",
+          "row": 2,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "DevOps",
+          "row": 3,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "5",
+          "row": 3,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "320",
+          "row": 3,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Marketing",
+          "row": 4,
+          "col": 0,
+          "row_span": 2,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Digital",
+          "row": 4,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "6",
+          "row": 4,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "280",
+          "row": 4,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Content",
+          "row": 5,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "4",
+          "row": 5,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "150",
+          "row": 5,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        }
+      ]
+    },
+    {
+      "table_index": 2,
+      "caption": null,
+      "page": null,
+      "num_rows": 7,
+      "num_cols": 6,
+      "flattened_records": [
+        {
+          "Quarter": "Q1 2024",
+          "Revenue ($K)": "1,245",
+          "COGS ($K)": "498",
+          "Gross Profit ($K)": "747",
+          "OpEx ($K)": "412",
+          "Net Income ($K)": "335"
+        },
+        {
+          "Quarter": "Q2 2024",
+          "Revenue ($K)": "1,380",
+          "COGS ($K)": "552",
+          "Gross Profit ($K)": "828",
+          "OpEx ($K)": "425",
+          "Net Income ($K)": "403"
+        },
+        {
+          "Quarter": "Q3 2024",
+          "Revenue ($K)": "1,520",
+          "COGS ($K)": "608",
+          "Gross Profit ($K)": "912",
+          "OpEx ($K)": "438",
+          "Net Income ($K)": "474"
+        },
+        {
+          "Quarter": "Q4 2024",
+          "Revenue ($K)": "2,180",
+          "COGS ($K)": "872",
+          "Gross Profit ($K)": "1,308",
+          "OpEx ($K)": "510",
+          "Net Income ($K)": "798"
+        },
+        {
+          "Quarter": "FY 2024",
+          "Revenue ($K)": "6,325",
+          "COGS ($K)": "2,530",
+          "Gross Profit ($K)": "3,795",
+          "OpEx ($K)": "1,785",
+          "Net Income ($K)": "2,010"
+        },
+        {
+          "Quarter": "YoY Growth",
+          "Revenue ($K)": "+18.5%",
+          "COGS ($K)": "+15.2%",
+          "Gross Profit ($K)": "+21.3%",
+          "OpEx ($K)": "+8.7%",
+          "Net Income ($K)": "+34.1%"
+        }
+      ],
+      "raw_cells": [
+        {
+          "text": "Quarter",
+          "row": 0,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Revenue ($K)",
+          "row": 0,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "COGS ($K)",
+          "row": 0,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Gross Profit ($K)",
+          "row": 0,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "OpEx ($K)",
+          "row": 0,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Net Income ($K)",
+          "row": 0,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Q1 2024",
+          "row": 1,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "1,245",
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "498",
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "747",
+          "row": 1,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "412",
+          "row": 1,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "335",
+          "row": 1,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Q2 2024",
+          "row": 2,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "1,380",
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "552",
+          "row": 2,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "828",
+          "row": 2,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "425",
+          "row": 2,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "403",
+          "row": 2,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Q3 2024",
+          "row": 3,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "1,520",
+          "row": 3,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "608",
+          "row": 3,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "912",
+          "row": 3,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "438",
+          "row": 3,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "474",
+          "row": 3,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Q4 2024",
+          "row": 4,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2,180",
+          "row": 4,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "872",
+          "row": 4,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "1,308",
+          "row": 4,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "510",
+          "row": 4,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "798",
+          "row": 4,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "FY 2024",
+          "row": 5,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "6,325",
+          "row": 5,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2,530",
+          "row": 5,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "3,795",
+          "row": 5,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "1,785",
+          "row": 5,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2,010",
+          "row": 5,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "YoY Growth",
+          "row": 6,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "+18.5%",
+          "row": 6,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "+15.2%",
+          "row": 6,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "+21.3%",
+          "row": 6,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "+8.7%",
+          "row": 6,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "+34.1%",
+          "row": 6,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        }
+      ]
+    },
+    {
+      "table_index": 3,
+      "caption": null,
+      "page": null,
+      "num_rows": 13,
+      "num_cols": 6,
+      "flattened_records": [
+        {
+          "ID": "E001",
+          "Name": "Alice Chen",
+          "Department": "Engineering",
+          "Title": "Senior Developer",
+          "Location": "San Francisco",
+          "Start Date": "2019-03-15"
+        },
+        {
+          "ID": "E002",
+          "Name": "Bob Martinez",
+          "Department": "Engineering",
+          "Title": "Tech Lead",
+          "Location": "San Francisco",
+          "Start Date": "2017-08-01"
+        },
+        {
+          "ID": "E003",
+          "Name": "Carol Johnson",
+          "Department": "Marketing",
+          "Title": "Content Manager",
+          "Location": "New York",
+          "Start Date": "2020-01-10"
+        },
+        {
+          "ID": "E004",
+          "Name": "David Kim",
+          "Department": "Engineering",
+          "Title": "DevOps Engineer",
+          "Location": "Remote",
+          "Start Date": "2021-06-20"
+        },
+        {
+          "ID": "E005",
+          "Name": "Eva Patel",
+          "Department": "Sales",
+          "Title": "Account Executive",
+          "Location": "Chicago",
+          "Start Date": "2018-11-05"
+        },
+        {
+          "ID": "E006",
+          "Name": "Frank Liu",
+          "Department": "Engineering",
+          "Title": "Frontend Developer",
+          "Location": "San Francisco",
+          "Start Date": "2022-02-14"
+        },
+        {
+          "ID": "E007",
+          "Name": "Grace Williams",
+          "Department": "HR",
+          "Title": "HR Manager",
+          "Location": "New York",
+          "Start Date": "2016-09-30"
+        },
+        {
+          "ID": "E008",
+          "Name": "Henry Brown",
+          "Department": "Marketing",
+          "Title": "Digital Strategist",
+          "Location": "Remote",
+          "Start Date": "2021-04-12"
+        },
+        {
+          "ID": "E009",
+          "Name": "Iris Nakamura",
+          "Department": "Engineering",
+          "Title": "Backend Developer",
+          "Location": "San Francisco",
+          "Start Date": "2020-07-22"
+        },
+        {
+          "ID": "E010",
+          "Name": "James O'Brien",
+          "Department": "Finance",
+          "Title": "Financial Analyst",
+          "Location": "New York",
+          "Start Date": "2019-12-01"
+        },
+        {
+          "ID": "E011",
+          "Name": "Karen Singh",
+          "Department": "Sales",
+          "Title": "Sales Director",
+          "Location": "Chicago",
+          "Start Date": "2015-05-18"
+        },
+        {
+          "ID": "E012",
+          "Name": "Leo Costa",
+          "Department": "Engineering",
+          "Title": "QA Engineer",
+          "Location": "Remote",
+          "Start Date": "2023-01-09"
+        }
+      ],
+      "raw_cells": [
+        {
+          "text": "ID",
+          "row": 0,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Name",
+          "row": 0,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Department",
+          "row": 0,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Title",
+          "row": 0,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Location",
+          "row": 0,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Start Date",
+          "row": 0,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "E001",
+          "row": 1,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Alice Chen",
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Engineering",
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Senior Developer",
+          "row": 1,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "San Francisco",
+          "row": 1,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2019-03-15",
+          "row": 1,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E002",
+          "row": 2,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Bob Martinez",
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Engineering",
+          "row": 2,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Tech Lead",
+          "row": 2,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "San Francisco",
+          "row": 2,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2017-08-01",
+          "row": 2,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E003",
+          "row": 3,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Carol Johnson",
+          "row": 3,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Marketing",
+          "row": 3,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Content Manager",
+          "row": 3,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "New York",
+          "row": 3,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2020-01-10",
+          "row": 3,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E004",
+          "row": 4,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "David Kim",
+          "row": 4,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Engineering",
+          "row": 4,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "DevOps Engineer",
+          "row": 4,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Remote",
+          "row": 4,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2021-06-20",
+          "row": 4,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E005",
+          "row": 5,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Eva Patel",
+          "row": 5,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Sales",
+          "row": 5,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Account Executive",
+          "row": 5,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Chicago",
+          "row": 5,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2018-11-05",
+          "row": 5,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E006",
+          "row": 6,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Frank Liu",
+          "row": 6,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Engineering",
+          "row": 6,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Frontend Developer",
+          "row": 6,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "San Francisco",
+          "row": 6,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2022-02-14",
+          "row": 6,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E007",
+          "row": 7,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Grace Williams",
+          "row": 7,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "HR",
+          "row": 7,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "HR Manager",
+          "row": 7,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "New York",
+          "row": 7,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2016-09-30",
+          "row": 7,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E008",
+          "row": 8,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Henry Brown",
+          "row": 8,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Marketing",
+          "row": 8,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Digital Strategist",
+          "row": 8,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Remote",
+          "row": 8,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2021-04-12",
+          "row": 8,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E009",
+          "row": 9,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Iris Nakamura",
+          "row": 9,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Engineering",
+          "row": 9,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Backend Developer",
+          "row": 9,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "San Francisco",
+          "row": 9,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2020-07-22",
+          "row": 9,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E010",
+          "row": 10,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "James O'Brien",
+          "row": 10,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Finance",
+          "row": 10,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Financial Analyst",
+          "row": 10,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "New York",
+          "row": 10,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2019-12-01",
+          "row": 10,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E011",
+          "row": 11,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Karen Singh",
+          "row": 11,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Sales",
+          "row": 11,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Sales Director",
+          "row": 11,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Chicago",
+          "row": 11,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2015-05-18",
+          "row": 11,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "E012",
+          "row": 12,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Leo Costa",
+          "row": 12,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Engineering",
+          "row": 12,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "QA Engineer",
+          "row": 12,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Remote",
+          "row": 12,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "2023-01-09",
+          "row": 12,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        }
+      ]
+    },
+    {
+      "table_index": 4,
+      "caption": null,
+      "page": null,
+      "num_rows": 9,
+      "num_cols": 5,
+      "flattened_records": [
+        {
+          "Feature": "File Storage",
+          "Free Plan": "5 GB",
+          "Pro Plan": "50 GB",
+          "Business Plan": "500 GB",
+          "Enterprise": "Unlimited"
+        },
+        {
+          "Feature": "Users",
+          "Free Plan": "1",
+          "Pro Plan": "5",
+          "Business Plan": "25",
+          "Enterprise": "Unlimited"
+        },
+        {
+          "Feature": "API Access",
+          "Free Plan": "—",
+          "Pro Plan": "✓",
+          "Business Plan": "✓",
+          "Enterprise": "✓"
+        },
+        {
+          "Feature": "Priority Support",
+          "Free Plan": "—",
+          "Pro Plan": "—",
+          "Business Plan": "✓",
+          "Enterprise": "✓"
+        },
+        {
+          "Feature": "Custom Branding",
+          "Free Plan": "—",
+          "Pro Plan": "—",
+          "Business Plan": "✓",
+          "Enterprise": "✓"
+        },
+        {
+          "Feature": "SSO Integration",
+          "Free Plan": "—",
+          "Pro Plan": "—",
+          "Business Plan": "—",
+          "Enterprise": "✓"
+        },
+        {
+          "Feature": "SLA Guarantee",
+          "Free Plan": "—",
+          "Pro Plan": "—",
+          "Business Plan": "99.9%",
+          "Enterprise": "99.99%"
+        },
+        {
+          "Feature": "Dedicated Manager",
+          "Free Plan": "—",
+          "Pro Plan": "—",
+          "Business Plan": "—",
+          "Enterprise": "✓"
+        }
+      ],
+      "raw_cells": [
+        {
+          "text": "Feature",
+          "row": 0,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Free Plan",
+          "row": 0,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Pro Plan",
+          "row": 0,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Business Plan",
+          "row": 0,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Enterprise",
+          "row": 0,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "File Storage",
+          "row": 1,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "5 GB",
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "50 GB",
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "500 GB",
+          "row": 1,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Unlimited",
+          "row": 1,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Users",
+          "row": 2,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "1",
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "5",
+          "row": 2,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "25",
+          "row": 2,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Unlimited",
+          "row": 2,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "API Access",
+          "row": 3,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 3,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 3,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 3,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 3,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Priority Support",
+          "row": 4,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 4,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 4,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 4,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 4,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Custom Branding",
+          "row": 5,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 5,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 5,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 5,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 5,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "SSO Integration",
+          "row": 6,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 6,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 6,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 6,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 6,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "SLA Guarantee",
+          "row": 7,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 7,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 7,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "99.9%",
+          "row": 7,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "99.99%",
+          "row": 7,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Dedicated Manager",
+          "row": 8,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 8,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 8,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "—",
+          "row": 8,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "✓",
+          "row": 8,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        }
+      ]
+    }
+  ],
+  "images": []
+}

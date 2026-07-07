@@ -350,7 +350,6 @@ def extract_images(doc, image_dir: Path) -> list[dict[str, Any]]:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# ══════════════════════════════════════════════════════════════════════════════
 # MARKDOWN RENDERER
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -361,46 +360,44 @@ def _fix_table_cell_bullets(md: str) -> str:
     """
     Docling flattens intra-cell bullet lists from Word tables into a single
     string like '- Ooo - Abc - Efgh'.
-
-    This detects cells that START with '- ' and contain more ' - ' separators,
-    and replaces the inner separators with '<br>- ' so the bullets render
-    correctly in Markdown/HTML previews.
-
-    Only acts on pipe-table data rows (not separator rows like |---|---|).
+    Detects cells that START with '- ' and contain more ' - ' separators,
+    and replaces them with '<br>- ' so bullets render correctly.
     """
     def _fix_cell(cell: str) -> str:
         c = cell.strip()
-        # Heuristic: starts with "- <word>" AND has at least one more " - "
         if _re.match(r'^-\s+\S', c) and ' - ' in c:
-            # Replace every " - " separator (with surrounding spaces) with a line break
             c = _re.sub(r'\s+-\s+', '<br>- ', c)
         return c
 
     fixed_lines = []
     for line in md.split('\n'):
-        # Only touch pipe-table data rows — skip separator rows (|---|---|)
         if line.startswith('|') and not _re.match(r'^\|[-| :]+\|$', line.strip()):
             parts = line.split('|')
-            # parts[0] and parts[-1] are empty strings outside the outer pipes
             fixed_parts = [
                 _fix_cell(p) if 0 < i < len(parts) - 1 else p
                 for i, p in enumerate(parts)
             ]
             line = '|'.join(fixed_parts)
         fixed_lines.append(line)
-
     return '\n'.join(fixed_lines)
 
 
 def _extract_nested_table_cells(docx_path: Path) -> dict[str, str]:
     """
-    Use python-docx to find outer table cells that contain nested (inner) tables.
-    Returns a dict mapping the flattened text Docling produces
-    to a <br>-separated formatted version that preserves the nested structure.
+    Use python-docx to find outer table cells whose content should be
+    reformatted as structured data. Two cases are handled:
 
-    Example:
-      Docling produces:  "A simple table A 10 B 15 C 20"
-      We return:         "A simple table<br>A \u007c 10<br>B \u007c 15<br>C \u007c 20"
+    Case A — Nested Word tables:
+      A cell contains an actual inner <w:tbl> table.
+
+    Case B — Manually typed tabular data:
+      A cell contains multiple paragraphs where each non-blank paragraph
+      has 2+ whitespace-separated short tokens that look like data rows.
+      E.g. user typed:  "A simple table" [Enter] "A  10" [Enter] "B  15" [Enter] "C  20"
+      Docling flattens: "A simple table A 10 B 15 C 20"
+      We restore:       "A simple table<br>A \\| 10<br>B \\| 15<br>C \\| 20"
+
+    Returns {flat_key: formatted_replacement} for use in _apply_nested_table_fixes.
     """
     try:
         from docx import Document as _DocxDocument
@@ -411,51 +408,82 @@ def _extract_nested_table_cells(docx_path: Path) -> dict[str, str]:
 
     replacements: dict[str, str] = {}
 
+    def _looks_like_data_row(text: str) -> list[str] | None:
+        parts = _re.split(r'[ \t]{2,}|\t', text.strip())
+        parts = [p.strip() for p in parts if p.strip()]
+        if len(parts) >= 2 and all(len(p) <= 40 for p in parts):
+            return parts
+        return None
+
     for table in doc.tables:
         for row in table.rows:
             for cell in row.cells:
-                if not cell.tables:          # no nested table — skip
+
+                # ── Case A: cell contains a nested Word table ──────────────
+                if cell.tables:
+                    para_text = ' '.join(
+                        p.text.strip() for p in cell.paragraphs if p.text.strip()
+                    )
+                    nested_rows: list[str] = []
+                    for nested_table in cell.tables:
+                        for nested_row in nested_table.rows:
+                            cols = [
+                                c.text.strip()
+                                for c in nested_row.cells
+                                if c.text.strip()
+                            ]
+                            if cols:
+                                nested_rows.append(' \\| '.join(cols))
+
+                    parts_list: list[str] = []
+                    if para_text:
+                        parts_list.append(para_text)
+                    parts_list.extend(nested_rows)
+                    formatted = '<br>'.join(parts_list)
+
+                    all_nested_text = ' '.join(
+                        c.text.strip()
+                        for nt in cell.tables
+                        for nr in nt.rows
+                        for c in nr.cells
+                        if c.text.strip()
+                    )
+                    flat_raw = ' '.join(filter(None, [para_text, all_nested_text]))
+                    flat_key = ' '.join(flat_raw.split())
+
+                    if flat_key and formatted and flat_key != formatted:
+                        replacements[flat_key] = formatted
                     continue
 
-                # --- Paragraphs in the cell (text outside nested tables) ---
-                para_text = ' '.join(
-                    p.text.strip() for p in cell.paragraphs if p.text.strip()
-                )
+                # ── Case B: manually typed tabular data ────────────────────
+                non_blank = [p for p in cell.paragraphs if p.text.strip()]
+                if len(non_blank) < 2:
+                    continue
 
-                # --- Render each nested table as rows joined with " | " ---
-                nested_rows: list[str] = []
-                for nested_table in cell.tables:
-                    for nested_row in nested_table.rows:
-                        cols = [
-                            c.text.strip()
-                            for c in nested_row.cells
-                            if c.text.strip()
-                        ]
-                        if cols:
-                            # Use \| (escaped pipe) so the separator doesn't
-                            # break the outer markdown pipe-table structure
-                            nested_rows.append(' \\| '.join(cols))
+                classified: list[tuple] = []
+                for p in non_blank:
+                    tokens = _looks_like_data_row(p.text)
+                    if tokens:
+                        classified.append(('row', tokens))
+                    else:
+                        classified.append(('text', p.text.strip()))
 
-                # --- Build the formatted replacement ---
-                parts: list[str] = []
-                if para_text:
-                    parts.append(para_text)
-                parts.extend(nested_rows)
-                formatted = '<br>'.join(parts)
+                row_count = sum(1 for kind, _ in classified if kind == 'row')
+                if row_count < 2:
+                    continue
 
-                # --- Build the flattened key (what Docling produces) ---
-                all_nested_text = ' '.join(
-                    c.text.strip()
-                    for nt in cell.tables
-                    for nr in nt.rows
-                    for c in nr.cells
-                    if c.text.strip()
+                fmt_parts: list[str] = []
+                for kind, content in classified:
+                    if kind == 'text':
+                        fmt_parts.append(content)
+                    else:
+                        fmt_parts.append(' \\| '.join(content))
+                formatted = '<br>'.join(fmt_parts)
+
+                flat_key = ' '.join(
+                    ' '.join(p.text.split()) for p in non_blank
                 )
-                flat_raw = ' '.join(
-                    filter(None, [para_text, all_nested_text])
-                )
-                # Normalise whitespace the same way Docling does
-                flat_key = ' '.join(flat_raw.split())
+                flat_key = ' '.join(flat_key.split())
 
                 if flat_key and formatted and flat_key != formatted:
                     replacements[flat_key] = formatted
@@ -505,6 +533,37 @@ def _fix_html_entities(md: str) -> str:
         .replace("&#39;",  "'")
         .replace("&nbsp;", " ")
     )
+
+
+def _escape_block_html_in_lists(md: str) -> str:
+    """
+    Markdown renderers treat block-level HTML tags (<ol>, </ol>, <ul>, etc.)
+    as real HTML even inside list item text.  When a list item contains text
+    like "(e.g., <ul>/<ol> nesting in HTML)", the renderer interprets </ol>
+    as the closing tag of the current ordered list, breaking the numbering.
+
+    This escapes those tags to HTML entities inside list item lines ONLY,
+    so they render as visible text.  Our own <br> tags (used in table cells
+    on pipe-table lines) are unaffected because they're never on list lines.
+    """
+    # Block-level tags that break list rendering when left raw
+    _BLOCK_TAGS = _re.compile(
+        r'<(/?(?:ul|ol|li|dl|dt|dd|table|thead|tbody|tfoot|tr|th|td'
+        r'|div|section|article|aside|header|footer|main|nav|p'
+        r'|blockquote|pre|figure|figcaption)\b[^>]*)>',
+        _re.IGNORECASE,
+    )
+    list_line_re = _re.compile(r'^(\s*(?:[-*+]|\d+\.)\s+)(.+)$')
+
+    out = []
+    for line in md.split('\n'):
+        m = list_line_re.match(line)
+        if m:
+            prefix, content = m.group(1), m.group(2)
+            content = _BLOCK_TAGS.sub(lambda mo: f'&lt;{mo.group(1)}&gt;', content)
+            line = prefix + content
+        out.append(line)
+    return '\n'.join(out)
 
 
 def _fix_merged_cell_duplicates(md: str) -> str:
@@ -837,6 +896,10 @@ def render_markdown(base_md: str, tables: list, images: list,
     if docx_path is not None:
         level_map = _build_list_level_map(docx_path)
         base_md = _apply_list_indentation(base_md, level_map)
+
+    # 8. Escape block-level HTML tags inside list item text (e.g. <ul>/<ol>)
+    #    so renderers don't interpret them as real HTML and break list numbering
+    base_md = _escape_block_html_in_lists(base_md)
 
     parts = [base_md]
 

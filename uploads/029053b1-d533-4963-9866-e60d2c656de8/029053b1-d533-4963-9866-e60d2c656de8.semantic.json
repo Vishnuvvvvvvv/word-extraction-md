@@ -1,0 +1,527 @@
+{
+  "document": "029053b1-d533-4963-9866-e60d2c656de8.docx",
+  "schema_version": "1.0",
+  "num_pages": "<bound method DoclingDocument.num_pages of DoclingDocument(schema_name='DoclingDocument', version='1.10.0', name='029053b1-d533-4963-9866-e60d2c656de8', origin=DocumentOrigin(mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document', binary_hash=6606509552115927224, filename='029053b1-d533-4963-9866-e60d2c656de8.docx', uri=None), furniture=GroupItem(self_ref='#/furniture', parent=None, children=[], content_layer=<ContentLayer.FURNITURE: 'furniture'>, meta=None, name='_root_', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), body=GroupItem(self_ref='#/body', parent=None, children=[RefItem(cref='#/groups/0')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='_root_', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), groups=[GroupItem(self_ref='#/groups/0', parent=RefItem(cref='#/body'), children=[RefItem(cref='#/texts/0')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='header-0', label=<GroupLabel.SECTION: 'section'>), ListGroup(self_ref='#/groups/1', parent=RefItem(cref='#/texts/4'), children=[RefItem(cref='#/texts/6'), RefItem(cref='#/texts/7'), RefItem(cref='#/texts/8'), RefItem(cref='#/texts/9'), RefItem(cref='#/texts/10')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='list', label=<GroupLabel.LIST: 'list'>), ListGroup(self_ref='#/groups/2', parent=RefItem(cref='#/texts/4'), children=[RefItem(cref='#/texts/11'), RefItem(cref='#/texts/12')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='list', label=<GroupLabel.LIST: 'list'>), ListGroup(self_ref='#/groups/3', parent=RefItem(cref='#/texts/4'), children=[RefItem(cref='#/texts/13')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='list', label=<GroupLabel.LIST: 'list'>), InlineGroup(self_ref='#/groups/4', parent=RefItem(cref='#/texts/14'), children=[RefItem(cref='#/texts/16'), RefItem(cref='#/texts/17'), RefItem(cref='#/texts/18')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='group', label=<GroupLabel.INLINE: 'inline'>), GroupItem(self_ref='#/groups/5', parent=RefItem(cref='#/tables/0'), children=[RefItem(cref='#/texts/28')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_1_0_0', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/6', parent=RefItem(cref='#/tables/0'), children=[RefItem(cref='#/texts/29')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_1_1_0', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/7', parent=RefItem(cref='#/tables/0'), children=[RefItem(cref='#/texts/30')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_1_2_0', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/8', parent=RefItem(cref='#/tables/1'), children=[RefItem(cref='#/texts/34')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_2_1_0', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/9', parent=RefItem(cref='#/tables/1'), children=[RefItem(cref='#/texts/35')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_2_3_0', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/10', parent=RefItem(cref='#/tables/1'), children=[RefItem(cref='#/texts/36')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_2_0_1', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/11', parent=RefItem(cref='#/tables/1'), children=[RefItem(cref='#/texts/37')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_2_1_1', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/12', parent=RefItem(cref='#/tables/1'), children=[RefItem(cref='#/texts/38')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_2_2_1', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/13', parent=RefItem(cref='#/tables/1'), children=[RefItem(cref='#/texts/39')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_2_3_1', label=<GroupLabel.UNSPECIFIED: 'unspecified'>), GroupItem(self_ref='#/groups/14', parent=RefItem(cref='#/tables/1'), children=[RefItem(cref='#/texts/40')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, name='rich_cell_group_2_4_1', label=<GroupLabel.UNSPECIFIED: 'unspecified'>)], texts=[SectionHeaderItem(self_ref='#/texts/0', parent=RefItem(cref='#/groups/0'), children=[RefItem(cref='#/texts/1'), RefItem(cref='#/texts/2'), RefItem(cref='#/texts/4'), RefItem(cref='#/texts/14'), RefItem(cref='#/texts/19'), RefItem(cref='#/texts/25'), RefItem(cref='#/texts/42')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Sample Document', text='Sample Document', formatting=None, hyperlink=None, level=1), TextItem(self_ref='#/texts/1', parent=RefItem(cref='#/texts/0'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='This document was created using accessibility techniques for headings, lists, image alternate text, tables, and columns. It should be completely accessible using assistive technologies such as screen readers.', text='This document was created using accessibility techniques for headings, lists, image alternate text, tables, and columns. It should be completely accessible using assistive technologies such as screen readers.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), SectionHeaderItem(self_ref='#/texts/2', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/3')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Headings', text='Headings', formatting=None, hyperlink=None, level=2), TextItem(self_ref='#/texts/3', parent=RefItem(cref='#/texts/2'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='There are eight section headings in this document. At the beginning, \"Sample Document\" is a level 1 heading. The main section headings, such as \"Headings\" and \"Lists\" are level 2 headings. The Tables section contains two sub-headings, \"Simple Table\" and \"Complex Table,\" which are both level 3 headings.', text='There are eight section headings in this document. At the beginning, \"Sample Document\" is a level 1 heading. The main section headings, such as \"Headings\" and \"Lists\" are level 2 headings. The Tables section contains two sub-headings, \"Simple Table\" and \"Complex Table,\" which are both level 3 headings.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), SectionHeaderItem(self_ref='#/texts/4', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/5'), RefItem(cref='#/groups/1'), RefItem(cref='#/groups/2'), RefItem(cref='#/groups/3')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Lists', text='Lists', formatting=None, hyperlink=None, level=2), TextItem(self_ref='#/texts/5', parent=RefItem(cref='#/texts/4'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='The following outline of the sections of this document is an ordered (numbered) list with six items. The fifth item, \"Tables,\" contains a nested unordered (bulleted) list with two items.', text='The following outline of the sections of this document is an ordered (numbered) list with six items. The fifth item, \"Tables,\" contains a nested unordered (bulleted) list with two items.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), ListItem(self_ref='#/texts/6', parent=RefItem(cref='#/groups/1'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='Headings', text='Headings', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='1.'), ListItem(self_ref='#/texts/7', parent=RefItem(cref='#/groups/1'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='Lists', text='Lists', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='2.'), ListItem(self_ref='#/texts/8', parent=RefItem(cref='#/groups/1'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='Links', text='Links', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='3.'), ListItem(self_ref='#/texts/9', parent=RefItem(cref='#/groups/1'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='Images', text='Images', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='4.'), ListItem(self_ref='#/texts/10', parent=RefItem(cref='#/groups/1'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='Tables', text='Tables', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='5.'), ListItem(self_ref='#/texts/11', parent=RefItem(cref='#/groups/2'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='Simple Tables', text='Simple Tables', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=False, marker=''), ListItem(self_ref='#/texts/12', parent=RefItem(cref='#/groups/2'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='Complex Tables', text='Complex Tables', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=False, marker=''), ListItem(self_ref='#/texts/13', parent=RefItem(cref='#/groups/3'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.LIST_ITEM: 'list_item'>, prov=[], source=[], comments=[], orig='Columns', text='Columns', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None, enumerated=True, marker='1.'), SectionHeaderItem(self_ref='#/texts/14', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/15'), RefItem(cref='#/groups/4')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Links', text='Links', formatting=None, hyperlink=None, level=2), TextItem(self_ref='#/texts/15', parent=RefItem(cref='#/texts/14'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='In web documents, links can point different locations on the page, different pages, or even downloadable documents, such as Word documents or PDFs:', text='In web documents, links can point different locations on the page, different pages, or even downloadable documents, such as Word documents or PDFs:', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/16', parent=RefItem(cref='#/groups/4'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Top of this Page', text='Top of this Page', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/17', parent=RefItem(cref='#/groups/4'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Sample Document', text='Sample Document', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=AnyUrl('http://www.dhs.state.il.us/page.aspx?item=67072')), TextItem(self_ref='#/texts/18', parent=RefItem(cref='#/groups/4'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Sample Document (docx)', text='Sample Document (docx)', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=AnyUrl('http://www.dhs.state.il.us/OneNetLibrary/27897/documents/Initiatives/IITAA/Sample-Document.docx')), SectionHeaderItem(self_ref='#/texts/19', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/pictures/0'), RefItem(cref='#/texts/20'), RefItem(cref='#/texts/21'), RefItem(cref='#/texts/22'), RefItem(cref='#/pictures/1'), RefItem(cref='#/texts/23'), RefItem(cref='#/texts/24')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Images', text='Images', formatting=None, hyperlink=None, level=2), TextItem(self_ref='#/texts/20', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Documents may contain images. For example, there is an image of the web accessibility symbol to the left of this paragraph. Its alternate text is \"Web Access Symbol\".', text='Documents may contain images. For example, there is an image of the web accessibility symbol to the left of this paragraph. Its alternate text is \"Web Access Symbol\".', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/21', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Alt text should communicate what an image means, not how it looks.', text='Alt text should communicate what an image means, not how it looks.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/22', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), TextItem(self_ref='#/texts/23', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Some images, such as charts or graphs, require long descriptions, but not all document types allow that. In web pages, long descriptions may be provided in several ways: on the page below the image, via a link below the image, or via a link on the image.', text='Some images, such as charts or graphs, require long descriptions, but not all document types allow that. In web pages, long descriptions may be provided in several ways: on the page below the image, via a link below the image, or via a link on the image.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/24', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), SectionHeaderItem(self_ref='#/texts/25', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/26'), RefItem(cref='#/texts/32')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Tables', text='Tables', formatting=None, hyperlink=None, level=2), SectionHeaderItem(self_ref='#/texts/26', parent=RefItem(cref='#/texts/25'), children=[RefItem(cref='#/texts/27'), RefItem(cref='#/tables/0'), RefItem(cref='#/texts/31')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Simple Tables', text='Simple Tables', formatting=None, hyperlink=None, level=3), TextItem(self_ref='#/texts/27', parent=RefItem(cref='#/texts/26'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Simple tables have a uniform number of columns and rows, without any merged cells:', text='Simple tables have a uniform number of columns and rows, without any merged cells:', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/28', parent=RefItem(cref='#/groups/5'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Screen Reader', text='Screen Reader', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/29', parent=RefItem(cref='#/groups/6'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Responses', text='Responses', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/30', parent=RefItem(cref='#/groups/7'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Share', text='Share', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/31', parent=RefItem(cref='#/texts/26'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), SectionHeaderItem(self_ref='#/texts/32', parent=RefItem(cref='#/texts/25'), children=[RefItem(cref='#/texts/33'), RefItem(cref='#/tables/1'), RefItem(cref='#/texts/41')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Complex Tables', text='Complex Tables', formatting=None, hyperlink=None, level=3), TextItem(self_ref='#/texts/33', parent=RefItem(cref='#/texts/32'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig=\"The following is a complex table, using merged cells as headers for sections within the table. This can't be made accessible in all types of documents:\", text=\"The following is a complex table, using merged cells as headers for sections within the table. This can't be made accessible in all types of documents:\", formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/34', parent=RefItem(cref='#/groups/8'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='May 2012', text='May 2012', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/35', parent=RefItem(cref='#/groups/9'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='September 2010', text='September 2010', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/36', parent=RefItem(cref='#/groups/10'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Screen Reader', text='Screen Reader', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/37', parent=RefItem(cref='#/groups/11'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Responses', text='Responses', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/38', parent=RefItem(cref='#/groups/12'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Share', text='Share', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/39', parent=RefItem(cref='#/groups/13'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Responses', text='Responses', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/40', parent=RefItem(cref='#/groups/14'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='Share', text='Share', formatting=Formatting(bold=True, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None), TextItem(self_ref='#/texts/41', parent=RefItem(cref='#/texts/32'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), SectionHeaderItem(self_ref='#/texts/42', parent=RefItem(cref='#/texts/0'), children=[RefItem(cref='#/texts/43'), RefItem(cref='#/texts/44')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.SECTION_HEADER: 'section_header'>, prov=[], source=[], comments=[], orig='Columns', text='Columns', formatting=None, hyperlink=None, level=2), TextItem(self_ref='#/texts/43', parent=RefItem(cref='#/texts/42'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='', text='', formatting=None, hyperlink=None), TextItem(self_ref='#/texts/44', parent=RefItem(cref='#/texts/42'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TEXT: 'text'>, prov=[], source=[], comments=[], orig='This is an example of columns. With columns, the page is split into two or more horizontal sections. Unlike tables, in which you usually read across a row and then down to the next, in columns, you read down a column and then across to the next.When columns are not created correctly, screen readers may run lines together, reading the first line of the first column, then the first line of the second column, then the second line of the first column, and so on. Obviously, that is not accessible.', text='This is an example of columns. With columns, the page is split into two or more horizontal sections. Unlike tables, in which you usually read across a row and then down to the next, in columns, you read down a column and then across to the next.When columns are not created correctly, screen readers may run lines together, reading the first line of the first column, then the first line of the second column, then the second line of the first column, and so on. Obviously, that is not accessible.', formatting=Formatting(bold=False, italic=False, underline=False, strikethrough=False, script=<Script.BASELINE: 'baseline'>), hyperlink=None)], pictures=[PictureItem(self_ref='#/pictures/0', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.PICTURE: 'picture'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=ImageRef(mimetype='image/png', dpi=72, size=Size(width=141.0, height=131.0), uri=AnyUrl('data:image/png;base64,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')), annotations=[]), PictureItem(self_ref='#/pictures/1', parent=RefItem(cref='#/texts/19'), children=[], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.PICTURE: 'picture'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=ImageRef(mimetype='image/png', dpi=72, size=Size(width=284.0, height=140.0), uri=AnyUrl('data:image/png;base64,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')), annotations=[])], tables=[TableItem(self_ref='#/tables/0', parent=RefItem(cref='#/texts/26'), children=[RefItem(cref='#/groups/5'), RefItem(cref='#/groups/6'), RefItem(cref='#/groups/7')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TABLE: 'table'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=None, data=TableData(table_cells=[RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Screen Reader', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/5')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Responses', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/6')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Share ', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/7')), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='JAWS', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='853', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='49% ', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='NVDA', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='238', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='14% ', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Window-Eyes', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='214', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='12% ', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='System Access', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='181', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='10% ', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='VoiceOver', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='159', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='9% ', column_header=False, row_header=False, row_section=False, fillable=False)], num_rows=6, num_cols=3, orientation=<Orientation.ROT_0: 'rot_0'>, grid=[[RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='Screen Reader', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/5')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=2, text='Responses', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/6')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=2, end_col_offset_idx=3, text='Share ', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/7'))], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='JAWS', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='853', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='49% ', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='NVDA', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='238', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='14% ', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='Window-Eyes', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='214', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='12% ', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='System Access', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='181', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='10% ', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='VoiceOver', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='159', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='9% ', column_header=False, row_header=False, row_section=False, fillable=False)]]), annotations=[]), TableItem(self_ref='#/tables/1', parent=RefItem(cref='#/texts/32'), children=[RefItem(cref='#/groups/8'), RefItem(cref='#/groups/9'), RefItem(cref='#/groups/10'), RefItem(cref='#/groups/11'), RefItem(cref='#/groups/12'), RefItem(cref='#/groups/13'), RefItem(cref='#/groups/14')], content_layer=<ContentLayer.BODY: 'body'>, meta=None, label=<DocItemLabel.TABLE: 'table'>, prov=[], source=[], comments=[], captions=[], references=[], footnotes=[], image=None, data=TableData(table_cells=[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='', column_header=True, row_header=False, row_section=False, fillable=False), RichTableCell(bbox=None, row_span=1, col_span=2, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=3, text='May 2012', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/8')), RichTableCell(bbox=None, row_span=1, col_span=2, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=5, text=' September 2010', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/9')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='Screen Reader', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/10')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='Responses', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/11')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='Share', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/12')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='Responses', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/13')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='Share ', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/14')), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='JAWS', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='853', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='49%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='727', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='59% ', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='NVDA', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='238', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='14%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='105', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='9% ', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='Window-Eyes', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='214', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='12%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='138', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='11% ', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='System Access', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='181', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='10%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='58', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='5% ', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='VoiceOver', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='159', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='9%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='120', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='10%', column_header=False, row_header=False, row_section=False, fillable=False)], num_rows=7, num_cols=5, orientation=<Orientation.ROT_0: 'rot_0'>, grid=[[TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=0, end_col_offset_idx=1, text='', column_header=True, row_header=False, row_section=False, fillable=False), RichTableCell(bbox=None, row_span=1, col_span=2, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=3, text='May 2012', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/8')), RichTableCell(bbox=None, row_span=1, col_span=2, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=1, end_col_offset_idx=3, text='May 2012', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/8')), RichTableCell(bbox=None, row_span=1, col_span=2, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=5, text=' September 2010', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/9')), RichTableCell(bbox=None, row_span=1, col_span=2, start_row_offset_idx=0, end_row_offset_idx=1, start_col_offset_idx=3, end_col_offset_idx=5, text=' September 2010', column_header=True, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/9'))], [RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=0, end_col_offset_idx=1, text='Screen Reader', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/10')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=1, end_col_offset_idx=2, text='Responses', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/11')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=2, end_col_offset_idx=3, text='Share', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/12')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=3, end_col_offset_idx=4, text='Responses', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/13')), RichTableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=1, end_row_offset_idx=2, start_col_offset_idx=4, end_col_offset_idx=5, text='Share ', column_header=False, row_header=False, row_section=False, fillable=False, ref=RefItem(cref='#/groups/14'))], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=0, end_col_offset_idx=1, text='JAWS', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=1, end_col_offset_idx=2, text='853', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=2, end_col_offset_idx=3, text='49%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=3, end_col_offset_idx=4, text='727', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=2, end_row_offset_idx=3, start_col_offset_idx=4, end_col_offset_idx=5, text='59% ', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=0, end_col_offset_idx=1, text='NVDA', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=1, end_col_offset_idx=2, text='238', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=2, end_col_offset_idx=3, text='14%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=3, end_col_offset_idx=4, text='105', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=3, end_row_offset_idx=4, start_col_offset_idx=4, end_col_offset_idx=5, text='9% ', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=0, end_col_offset_idx=1, text='Window-Eyes', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=1, end_col_offset_idx=2, text='214', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=2, end_col_offset_idx=3, text='12%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=3, end_col_offset_idx=4, text='138', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=4, end_row_offset_idx=5, start_col_offset_idx=4, end_col_offset_idx=5, text='11% ', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=0, end_col_offset_idx=1, text='System Access', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=1, end_col_offset_idx=2, text='181', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=2, end_col_offset_idx=3, text='10%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=3, end_col_offset_idx=4, text='58', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=5, end_row_offset_idx=6, start_col_offset_idx=4, end_col_offset_idx=5, text='5% ', column_header=False, row_header=False, row_section=False, fillable=False)], [TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=0, end_col_offset_idx=1, text='VoiceOver', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=1, end_col_offset_idx=2, text='159', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=2, end_col_offset_idx=3, text='9%', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=3, end_col_offset_idx=4, text='120', column_header=False, row_header=False, row_section=False, fillable=False), TableCell(bbox=None, row_span=1, col_span=1, start_row_offset_idx=6, end_row_offset_idx=7, start_col_offset_idx=4, end_col_offset_idx=5, text='10%', column_header=False, row_header=False, row_section=False, fillable=False)]]), annotations=[])], key_value_items=[], form_items=[], field_regions=[], field_items=[], pages={})>",
+  "text_blocks_count": 45,
+  "tables": [
+    {
+      "table_index": 0,
+      "caption": null,
+      "page": null,
+      "num_rows": 6,
+      "num_cols": 3,
+      "flattened_records": [
+        {
+          "**Screen Reader**": "JAWS",
+          "**Responses**": "853",
+          "**Share**": "49% "
+        },
+        {
+          "**Screen Reader**": "NVDA",
+          "**Responses**": "238",
+          "**Share**": "14% "
+        },
+        {
+          "**Screen Reader**": "Window-Eyes",
+          "**Responses**": "214",
+          "**Share**": "12% "
+        },
+        {
+          "**Screen Reader**": "System Access",
+          "**Responses**": "181",
+          "**Share**": "10% "
+        },
+        {
+          "**Screen Reader**": "VoiceOver",
+          "**Responses**": "159",
+          "**Share**": "9% "
+        }
+      ],
+      "raw_cells": [
+        {
+          "text": "Screen Reader",
+          "row": 0,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Responses",
+          "row": 0,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "Share ",
+          "row": 0,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "JAWS",
+          "row": 1,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "853",
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "49% ",
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "NVDA",
+          "row": 2,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "238",
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "14% ",
+          "row": 2,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Window-Eyes",
+          "row": 3,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "214",
+          "row": 3,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "12% ",
+          "row": 3,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "System Access",
+          "row": 4,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "181",
+          "row": 4,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "10% ",
+          "row": 4,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "VoiceOver",
+          "row": 5,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "159",
+          "row": 5,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "9% ",
+          "row": 5,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        }
+      ]
+    },
+    {
+      "table_index": 1,
+      "caption": null,
+      "page": null,
+      "num_rows": 7,
+      "num_cols": 5,
+      "flattened_records": [
+        {
+          "": "**Screen Reader**",
+          "**May 2012**": "**Share**",
+          "**September 2010**": "**Share**"
+        },
+        {
+          "": "JAWS",
+          "**May 2012**": "49%",
+          "**September 2010**": "59% "
+        },
+        {
+          "": "NVDA",
+          "**May 2012**": "14%",
+          "**September 2010**": "9% "
+        },
+        {
+          "": "Window-Eyes",
+          "**May 2012**": "12%",
+          "**September 2010**": "11% "
+        },
+        {
+          "": "System Access",
+          "**May 2012**": "10%",
+          "**September 2010**": "5% "
+        },
+        {
+          "": "VoiceOver",
+          "**May 2012**": "9%",
+          "**September 2010**": "10%"
+        }
+      ],
+      "raw_cells": [
+        {
+          "text": "",
+          "row": 0,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": true
+        },
+        {
+          "text": "May 2012",
+          "row": 0,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 2,
+          "is_header": true
+        },
+        {
+          "text": " September 2010",
+          "row": 0,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 2,
+          "is_header": true
+        },
+        {
+          "text": "Screen Reader",
+          "row": 1,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Responses",
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Share",
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Responses",
+          "row": 1,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Share ",
+          "row": 1,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "JAWS",
+          "row": 2,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "853",
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "49%",
+          "row": 2,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "727",
+          "row": 2,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "59% ",
+          "row": 2,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "NVDA",
+          "row": 3,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "238",
+          "row": 3,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "14%",
+          "row": 3,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "105",
+          "row": 3,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "9% ",
+          "row": 3,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "Window-Eyes",
+          "row": 4,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "214",
+          "row": 4,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "12%",
+          "row": 4,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "138",
+          "row": 4,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "11% ",
+          "row": 4,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "System Access",
+          "row": 5,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "181",
+          "row": 5,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "10%",
+          "row": 5,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "58",
+          "row": 5,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "5% ",
+          "row": 5,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "VoiceOver",
+          "row": 6,
+          "col": 0,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "159",
+          "row": 6,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "9%",
+          "row": 6,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "120",
+          "row": 6,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        },
+        {
+          "text": "10%",
+          "row": 6,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1,
+          "is_header": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "picture_index": 0,
+      "file": "uploads\\029053b1-d533-4963-9866-e60d2c656de8\\images\\picture_0.png",
+      "caption": null,
+      "page": null,
+      "bbox": null,
+      "width": 141,
+      "height": 131,
+      "ocr_text": "",
+      "semantic": {
+        "chart_type": "not_evaluated",
+        "series": [],
+        "summary": ""
+      },
+      "resolution_method": "docling_dom"
+    },
+    {
+      "picture_index": 1,
+      "file": "uploads\\029053b1-d533-4963-9866-e60d2c656de8\\images\\picture_1.png",
+      "caption": null,
+      "page": null,
+      "bbox": null,
+      "width": 284,
+      "height": 140,
+      "ocr_text": "JAWS\nNVDA\nWindow-Eyes\nSystem Access\nVoiceOver",
+      "semantic": {
+        "chart_type": "not_evaluated",
+        "series": [],
+        "summary": ""
+      },
+      "resolution_method": "docling_dom"
+    }
+  ]
+}

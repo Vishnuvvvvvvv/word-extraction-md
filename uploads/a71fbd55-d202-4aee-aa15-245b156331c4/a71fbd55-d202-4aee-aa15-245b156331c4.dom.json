@@ -1,11 +1,11 @@
 {
   "schema_name": "DoclingDocument",
   "version": "1.10.0",
-  "name": "00e3ff73-d63f-4617-bf5f-c4ea87f25bd4",
+  "name": "a71fbd55-d202-4aee-aa15-245b156331c4",
   "origin": {
     "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "binary_hash": 17585611075067641615,
-    "filename": "00e3ff73-d63f-4617-bf5f-c4ea87f25bd4.docx"
+    "filename": "a71fbd55-d202-4aee-aa15-245b156331c4.docx"
   },
   "furniture": {
     "self_ref": "#/furniture",
