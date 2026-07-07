@@ -350,28 +350,499 @@ def extract_images(doc, image_dir: Path) -> list[dict[str, Any]]:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # MARKDOWN RENDERER
 # ══════════════════════════════════════════════════════════════════════════════
 
-def render_markdown(base_md: str, tables: list, images: list) -> str:
+import re as _re
+
+
+def _fix_table_cell_bullets(md: str) -> str:
+    """
+    Docling flattens intra-cell bullet lists from Word tables into a single
+    string like '- Ooo - Abc - Efgh'.
+
+    This detects cells that START with '- ' and contain more ' - ' separators,
+    and replaces the inner separators with '<br>- ' so the bullets render
+    correctly in Markdown/HTML previews.
+
+    Only acts on pipe-table data rows (not separator rows like |---|---|).
+    """
+    def _fix_cell(cell: str) -> str:
+        c = cell.strip()
+        # Heuristic: starts with "- <word>" AND has at least one more " - "
+        if _re.match(r'^-\s+\S', c) and ' - ' in c:
+            # Replace every " - " separator (with surrounding spaces) with a line break
+            c = _re.sub(r'\s+-\s+', '<br>- ', c)
+        return c
+
+    fixed_lines = []
+    for line in md.split('\n'):
+        # Only touch pipe-table data rows — skip separator rows (|---|---|)
+        if line.startswith('|') and not _re.match(r'^\|[-| :]+\|$', line.strip()):
+            parts = line.split('|')
+            # parts[0] and parts[-1] are empty strings outside the outer pipes
+            fixed_parts = [
+                _fix_cell(p) if 0 < i < len(parts) - 1 else p
+                for i, p in enumerate(parts)
+            ]
+            line = '|'.join(fixed_parts)
+        fixed_lines.append(line)
+
+    return '\n'.join(fixed_lines)
+
+
+def _extract_nested_table_cells(docx_path: Path) -> dict[str, str]:
+    """
+    Use python-docx to find outer table cells that contain nested (inner) tables.
+    Returns a dict mapping the flattened text Docling produces
+    to a <br>-separated formatted version that preserves the nested structure.
+
+    Example:
+      Docling produces:  "A simple table A 10 B 15 C 20"
+      We return:         "A simple table<br>A \u007c 10<br>B \u007c 15<br>C \u007c 20"
+    """
+    try:
+        from docx import Document as _DocxDocument
+        doc = _DocxDocument(str(docx_path))
+    except Exception as exc:
+        log.warning("python-docx could not open '%s': %s", docx_path.name, exc)
+        return {}
+
+    replacements: dict[str, str] = {}
+
+    for table in doc.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                if not cell.tables:          # no nested table — skip
+                    continue
+
+                # --- Paragraphs in the cell (text outside nested tables) ---
+                para_text = ' '.join(
+                    p.text.strip() for p in cell.paragraphs if p.text.strip()
+                )
+
+                # --- Render each nested table as rows joined with " | " ---
+                nested_rows: list[str] = []
+                for nested_table in cell.tables:
+                    for nested_row in nested_table.rows:
+                        cols = [
+                            c.text.strip()
+                            for c in nested_row.cells
+                            if c.text.strip()
+                        ]
+                        if cols:
+                            # Use \| (escaped pipe) so the separator doesn't
+                            # break the outer markdown pipe-table structure
+                            nested_rows.append(' \\| '.join(cols))
+
+                # --- Build the formatted replacement ---
+                parts: list[str] = []
+                if para_text:
+                    parts.append(para_text)
+                parts.extend(nested_rows)
+                formatted = '<br>'.join(parts)
+
+                # --- Build the flattened key (what Docling produces) ---
+                all_nested_text = ' '.join(
+                    c.text.strip()
+                    for nt in cell.tables
+                    for nr in nt.rows
+                    for c in nr.cells
+                    if c.text.strip()
+                )
+                flat_raw = ' '.join(
+                    filter(None, [para_text, all_nested_text])
+                )
+                # Normalise whitespace the same way Docling does
+                flat_key = ' '.join(flat_raw.split())
+
+                if flat_key and formatted and flat_key != formatted:
+                    replacements[flat_key] = formatted
+
+    return replacements
+
+
+def _apply_nested_table_fixes(md: str, fixes: dict[str, str]) -> str:
+    """Replace flattened nested-table text inside pipe-table cells."""
+    if not fixes:
+        return md
+
+    fixed_lines = []
+    for line in md.split('\n'):
+        if line.startswith('|') and not _re.match(r'^\|[-| :]+\|$', line.strip()):
+            for flat, formatted in fixes.items():
+                # Match the flat text inside a cell (between | delimiters),
+                # normalising internal whitespace before comparing.
+                normalised_line = ' '.join(line.split())
+                if flat in normalised_line:
+                    # Rebuild the line using the original but replacing the flat text
+                    # We normalise cell content for matching, then put formatted back.
+                    cells = line.split('|')
+                    new_cells = []
+                    for ci, cell in enumerate(cells):
+                        cell_norm = ' '.join(cell.split())
+                        if flat in cell_norm:
+                            new_cells.append(' ' + formatted + ' ')
+                        else:
+                            new_cells.append(cell)
+                    line = '|'.join(new_cells)
+        fixed_lines.append(line)
+    return '\n'.join(fixed_lines)
+
+
+def _fix_html_entities(md: str) -> str:
+    """
+    Docling HTML-encodes special characters in headings and table cells.
+    Decode the most common ones back to readable text.
+    """
+    return (
+        md
+        .replace("&amp;",  "&")
+        .replace("&lt;",   "<")
+        .replace("&gt;",   ">")
+        .replace("&quot;", '"')
+        .replace("&#39;",  "'")
+        .replace("&nbsp;", " ")
+    )
+
+
+def _fix_merged_cell_duplicates(md: str) -> str:
+    """
+    Docling represents colspan merged cells by repeating the cell text,
+    e.g.:  | **Region & Quarter**  **Region & Quarter** ||
+    and rowspan gaps as empty cells:  ||
+
+    This cleans up:
+      - Cells where the same text (or bold text) is repeated twice → keep once
+      - Trailing empty phantom cells from colspan (the extra ||)
+      - Empty rowspan cells → replace with ↑ (indicates 'merged from above')
+    """
+    def _dedup_cell(cell: str) -> str:
+        c = cell.strip()
+        if not c:
+            return cell  # handled separately below
+
+        # Pattern: "TEXT  TEXT" or "**TEXT**  **TEXT**" (same content repeated)
+        # Split on 2+ spaces and check if all parts are the same
+        parts = _re.split(r'\s{2,}', c)
+        if len(parts) >= 2:
+            unique = list(dict.fromkeys(p.strip() for p in parts if p.strip()))
+            if len(unique) == 1:
+                return ' ' + unique[0] + ' '
+
+        return cell
+
+    fixed_lines = []
+    for line in md.split('\n'):
+        if line.startswith('|') and not _re.match(r'^\|[-| :]+\|$', line.strip()):
+            cells = line.split('|')
+            new_cells = []
+            for i, cell in enumerate(cells):
+                if i == 0 or i == len(cells) - 1:
+                    new_cells.append(cell)
+                    continue
+                if cell.strip() == '':
+                    # Empty cell — could be colspan phantom or rowspan gap
+                    # Replace with a subtle marker only if surrounded by real cells
+                    new_cells.append(' ↑ ')
+                else:
+                    new_cells.append(_dedup_cell(cell))
+            line = '|'.join(new_cells)
+        fixed_lines.append(line)
+    return '\n'.join(fixed_lines)
+
+
+def _fix_list_blank_lines(md: str) -> str:
+    """
+    Docling adds blank lines between every list item, which breaks Markdown
+    list nesting. A blank line between two list items tells the parser to
+    end the current list and start a new one — destroying hierarchy.
+
+    This removes blank lines that appear BETWEEN consecutive list items
+    (lines starting with optional spaces + '- '/'* '/'+ ' '/'N. ').
+
+    Blank lines before/after non-list content are left untouched.
+    """
+    list_re = _re.compile(r'^\s*([-*+]|\d+\.)\s+')
+
+    lines = md.split('\n')
+    out: list[str] = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if line.strip() == '':
+            # Look backwards (skip multiple consecutive blank lines)
+            prev_idx = len(out) - 1
+            while prev_idx >= 0 and out[prev_idx].strip() == '':
+                prev_idx -= 1
+            prev_is_list = prev_idx >= 0 and bool(list_re.match(out[prev_idx]))
+
+            # Look forwards (skip multiple consecutive blank lines)
+            next_idx = i + 1
+            while next_idx < len(lines) and lines[next_idx].strip() == '':
+                next_idx += 1
+            next_is_list = next_idx < len(lines) and bool(list_re.match(lines[next_idx]))
+
+            if prev_is_list and next_is_list:
+                # Drop this blank line (and skip any further consecutive blanks)
+                i = next_idx
+                continue
+        out.append(line)
+        i += 1
+    return '\n'.join(out)
+
+
+def _fix_mixed_list_nesting(md: str) -> str:
+    """
+    Fixes two related Docling rendering problems for mixed-type nested lists:
+
+    Problem A — Bullets not indented under numbered items:
+      Docling renders:
+          5. Tables
+          - Simple Tables      ← should be '   - Simple Tables'
+          - Complex Tables
+          1. Columns           ← restarts at 1, should be 6
+      Expected:
+          5. Tables
+             - Simple Tables
+             - Complex Tables
+          6. Columns
+
+    Algorithm:
+      - Walk lines. When a numbered item (N. text) is seen, record N.
+      - If the very next line (no blank) is an unindented bullet (- text):
+          → enter "sub-bullet mode": indent all following unindented bullets
+      - When sub-bullet mode ends and the next numbered item is "1. text":
+          → renumber it to (last_num + 1) and continue renumbering.
+    """
+    numbered_re = _re.compile(r'^(\d+)\.\s+(.+)$')
+    bullet_re   = _re.compile(r'^([-*+])\s+')
+
+    lines = md.split('\n')
+    out: list[str] = []
+    last_num = 0          # last seen numbered list counter
+    in_sub = False        # currently inside a sub-bullet block under a numbered item
+    sub_continuation = 0  # what the next numbered item should be after sub-bullets
+
+    for i, line in enumerate(lines):
+        nm = numbered_re.match(line)
+        bm = bullet_re.match(line)
+
+        if nm:
+            num = int(nm.group(1))
+            if in_sub:
+                # Numbered list resuming after sub-bullets
+                in_sub = False
+                if num == 1 and sub_continuation > 0:
+                    # Restart detected — renumber to continue sequence
+                    line = f'{sub_continuation}. {nm.group(2)}'
+                    last_num = sub_continuation
+                    sub_continuation = 0
+                else:
+                    last_num = num
+            else:
+                last_num = num
+
+            out.append(line)
+
+        elif bm and not line.startswith(' ') and not line.startswith('\t'):
+            # Unindented bullet
+            if not in_sub:
+                # Check if the previous non-empty output line was a numbered item
+                prev = next((l for l in reversed(out) if l.strip()), '')
+                if numbered_re.match(prev):
+                    in_sub = True
+                    sub_continuation = last_num + 1
+
+            if in_sub:
+                out.append('   ' + line)   # indent 3 spaces = sub-item
+            else:
+                out.append(line)
+
+        else:
+            if line.strip() and not bullet_re.match(line.lstrip()):
+                # Non-list, non-blank content ends sub-bullet mode
+                in_sub = False
+            out.append(line)
+
+    return '\n'.join(out)
+
+
+def _build_list_level_map(docx_path: Path) -> dict[str, int]:
+    """
+    Open the DOCX with python-docx and determine each list paragraph's
+    indent level.  Returns {normalised_text: level} (level 0 = top level).
+
+    Three-tier lookup in order of priority:
+      1. Direct w:numPr/w:ilvl on the paragraph element
+      2. Style name pattern  (e.g. "List Bullet 2" → level 1,
+                                   "List Number 3"  → level 2)
+      3. w:numPr inherited from the paragraph style chain
+    """
+    # Known Word list-style-name → level mappings
+    _STYLE_LEVEL_NAMES = {
+        "list bullet":    0, "list bullet 2": 1, "list bullet 3": 2,
+        "list bullet 4":  3, "list bullet 5": 4,
+        "list number":    0, "list number 2": 1, "list number 3": 2,
+        "list number 4":  3, "list number 5": 4,
+        "list paragraph": 0, "list continue": 0,
+        "list continue 2": 1, "list continue 3": 2,
+    }
+    import re as _re2
+
+    try:
+        from docx import Document as _DocxDocument
+        from docx.oxml.ns import qn as _qn
+        doc = _DocxDocument(str(docx_path))
+        level_map: dict[str, int] = {}
+
+        def _ilvl_from_numPr(el) -> Optional[int]:
+            """Extract ilvl value from a w:numPr element."""
+            ilvl_el = el.find(_qn('w:ilvl'))
+            if ilvl_el is not None:
+                return int(ilvl_el.get(_qn('w:val'), 0))
+            return None
+
+        def _get_level(para) -> Optional[int]:
+            # --- Tier 1: direct w:numPr on the paragraph ---
+            pPr = para._p.find(_qn('w:pPr'))
+            if pPr is not None:
+                numPr = pPr.find(_qn('w:numPr'))
+                if numPr is not None:
+                    lv = _ilvl_from_numPr(numPr)
+                    if lv is not None:
+                        return lv
+
+            # --- Tier 2: style name encodes the level ---
+            if para.style:
+                sname = para.style.name.strip().lower()
+                if sname in _STYLE_LEVEL_NAMES:
+                    return _STYLE_LEVEL_NAMES[sname]
+                # Catch styles like "List Bullet2" or "Bullet 3" etc.
+                m = _re2.search(r'\b(\d)\s*$', sname)
+                if m and any(k.rstrip(' 0123456789') in sname
+                             for k in ("list bullet", "list number",
+                                       "list paragraph", "list continue")):
+                    return int(m.group(1)) - 1
+
+            # --- Tier 3: inherited w:numPr from style chain ---
+            try:
+                style = para.style
+                visited: set = set()
+                while style is not None and id(style) not in visited:
+                    visited.add(id(style))
+                    for pPr_el in style.element.iter(_qn('w:pPr')):
+                        numPr = pPr_el.find(_qn('w:numPr'))
+                        if numPr is not None:
+                            lv = _ilvl_from_numPr(numPr)
+                            if lv is not None:
+                                return lv
+                    style = getattr(style, 'base_style', None)
+            except Exception:
+                pass
+
+            return None
+
+        for para in doc.paragraphs:
+            level = _get_level(para)
+            if level is not None:
+                text = ' '.join(para.text.split())
+                if text:
+                    level_map[text] = level
+
+        log.debug("_build_list_level_map: found %d list items", len(level_map))
+        return level_map
+
+    except Exception as exc:
+        log.warning("_build_list_level_map failed: %s", exc)
+        return {}
+
+
+
+def _apply_list_indentation(md: str, level_map: dict[str, int]) -> str:
+    """
+    For each list line in the markdown, look up its text in level_map and
+    prepend the correct number of spaces (4 per level).
+
+    Also renumbers top-level ordered list items that restarted at 1 because
+    a sub-list broke the sequence.
+    """
+    if not level_map:
+        return md
+
+    item_re = _re.compile(r'^(\s*)([-*+]|\d+\.)\s+(.+)$')
+
+    lines = md.split('\n')
+    out: list[str] = []
+    # Track ordered list counters per level: {level: counter}
+    ol_counters: dict[int, int] = {}
+
+    for line in lines:
+        m = item_re.match(line)
+        if not m:
+            out.append(line)
+            continue
+
+        existing_indent = m.group(1)
+        marker = m.group(2)
+        text = m.group(3)
+        norm = ' '.join(text.split())
+
+        level = level_map.get(norm)
+        if level is None:
+            # Text not found in map — keep line as-is
+            out.append(line)
+            continue
+
+        indent = '    ' * level  # 4 spaces per level
+
+        # For numbered markers, track and fix the counter per level
+        if _re.match(r'^\d+\.$', marker):
+            # Reset deeper-level counters when we go up a level
+            for l in list(ol_counters.keys()):
+                if l > level:
+                    del ol_counters[l]
+            ol_counters[level] = ol_counters.get(level, 0) + 1
+            marker = f'{ol_counters[level]}.'
+
+        out.append(f'{indent}{marker} {text}')
+
+    return '\n'.join(out)
+
+
+def render_markdown(base_md: str, tables: list, images: list,
+                    docx_path: Optional[Path] = None) -> str:
+    # 1. Fix flattened bullet lists inside table cells
+    base_md = _fix_table_cell_bullets(base_md)
+
+    # 2. Fix cells containing nested tables (mini-tables flattened by Docling)
+    if docx_path is not None:
+        nested_fixes = _extract_nested_table_cells(docx_path)
+        base_md = _apply_nested_table_fixes(base_md, nested_fixes)
+
+    # 3. Decode HTML entities Docling introduces (& → &amp; etc.)
+    base_md = _fix_html_entities(base_md)
+
+    # 4. Clean up merged-cell duplicate text in colspan/rowspan headers
+    base_md = _fix_merged_cell_duplicates(base_md)
+
+    # 5. Remove blank lines Docling inserts between list items (destroys nesting)
+    base_md = _fix_list_blank_lines(base_md)
+
+    # 6. Fix mixed-type list nesting (bullets under numbered, and list restarts)
+    base_md = _fix_mixed_list_nesting(base_md)
+
+    # 7. Apply proper indentation from DOCX ilvl levels (fixes nested lists)
+    if docx_path is not None:
+        level_map = _build_list_level_map(docx_path)
+        base_md = _apply_list_indentation(base_md, level_map)
+
     parts = [base_md]
 
-    if tables:
-        parts.append("\n\n---\n## Extracted Tables\n")
-        for i, tbl in enumerate(tables):
-            rows = tbl.get("num_rows", "?")
-            cols = tbl.get("num_cols", "?")
-            parts.append(f"\n### Table {i + 1}  ({rows}×{cols})")
-            if tbl.get("caption"):
-                parts.append(f"**Caption:** {tbl['caption']}")
-            records = tbl.get("flattened_records")
-            if records:
-                headers = list(records[0].keys())
-                parts.append("| " + " | ".join(str(h) for h in headers) + " |")
-                parts.append("|" + "|".join(["---"] * len(headers)) + "|")
-                for row in records:
-                    parts.append("| " + " | ".join(str(row.get(h, "")) for h in headers) + " |")
-
+    # Tables are already rendered by Docling's export_to_markdown() above.
+    # Only append the images/charts appendix — this adds OCR text and chart
+    # semantic data which does NOT appear in the base markdown.
     if images:
         parts.append("\n\n---\n## Extracted Image & Chart Data\n")
         for rec in images:
@@ -392,6 +863,7 @@ def render_markdown(base_md: str, tables: list, images: list) -> str:
                     parts.append(f"- {pt.get('label','')}: {pt.get('value','')}")
 
     return "\n".join(parts)
+
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -488,7 +960,7 @@ def _process_document(docx_path: Path) -> dict[str, Any]:
     except Exception as exc:
         base_md = f"*Markdown export failed: {exc}*"
 
-    full_md = render_markdown(base_md, tables, images)
+    full_md = render_markdown(base_md, tables, images, docx_path=docx_path)
     md_path = out_dir / f"{name}.md"
     md_path.write_text(full_md, encoding="utf-8")
 
@@ -531,27 +1003,77 @@ def _run_pipeline(job_id: str, docx_path: Path) -> None:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# FILE HELPERS
+# ══════════════════════════════════════════════════════════════════════════════
+
+import time as _time
+
+
+def _safe_unlink(path: Path, retries: int = 3, delay: float = 0.5) -> None:
+    """
+    Delete a file, retrying on Windows PermissionError (WinError 32).
+    This happens when doc2docx/Word COM still has the file handle open
+    immediately after conversion finishes.
+    """
+    for attempt in range(retries):
+        try:
+            path.unlink(missing_ok=True)
+            return
+        except PermissionError:
+            if attempt < retries - 1:
+                _time.sleep(delay)
+            else:
+                log.warning("Could not delete temp file '%s' — still locked. Will be cleaned up later.", path.name)
+        except Exception:
+            return  # any other error — just move on
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # LEGACY .doc CONVERSION
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _convert_doc_to_docx(doc_path: Path) -> Optional[Path]:
-    soffice = shutil.which("soffice") or shutil.which("libreoffice")
-    if soffice is None:
-        log.warning("LibreOffice not found — cannot convert legacy .doc")
-        return None
+    """
+    Convert legacy .doc → .docx.
+    Strategy (tried in order):
+      1. doc2docx  — uses installed MS Word via COM (Windows only, best quality)
+      2. LibreOffice headless — cross-platform, needs soffice on PATH
+    Returns the .docx Path on success, None if nothing worked.
+    """
+    out_path = STAGING_DIR / (doc_path.stem + ".docx")
     STAGING_DIR.mkdir(parents=True, exist_ok=True)
-    import subprocess
+
+    # ── Strategy 1: doc2docx (MS Word COM, Windows only) ──────────────────────
     try:
-        subprocess.run(
-            [soffice, "--headless", "--convert-to", "docx",
-             "--outdir", str(STAGING_DIR), str(doc_path)],
-            check=True, capture_output=True, timeout=120,
-        )
+        from doc2docx import convert
+        convert(str(doc_path), str(out_path))
+        if out_path.exists():
+            log.info("doc2docx conversion succeeded: %s", out_path.name)
+            return out_path
+    except ImportError:
+        log.info("doc2docx not installed — trying LibreOffice next.")
     except Exception as exc:
-        log.error("LibreOffice conversion failed: %s", exc)
-        return None
-    converted = STAGING_DIR / (doc_path.stem + ".docx")
-    return converted if converted.exists() else None
+        log.warning("doc2docx failed (%s) — trying LibreOffice next.", exc)
+
+    # ── Strategy 2: LibreOffice headless ──────────────────────────────────────
+    import subprocess
+    soffice = shutil.which("soffice") or shutil.which("libreoffice")
+    if soffice:
+        try:
+            subprocess.run(
+                [soffice, "--headless", "--convert-to", "docx",
+                 "--outdir", str(STAGING_DIR), str(doc_path)],
+                check=True, capture_output=True, timeout=120,
+            )
+            if out_path.exists():
+                log.info("LibreOffice conversion succeeded: %s", out_path.name)
+                return out_path
+        except Exception as exc:
+            log.error("LibreOffice conversion failed: %s", exc)
+    else:
+        log.warning("LibreOffice not found on PATH.")
+
+    return None
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -586,11 +1108,16 @@ async def upload_document(
 
     if suffix == ".doc":
         converted = _convert_doc_to_docx(tmp_path)
-        tmp_path.unlink(missing_ok=True)
+        # Use retry-unlink: doc2docx (Word COM) may still hold the file handle
+        _safe_unlink(tmp_path)
         if converted is None:
             raise HTTPException(
                 status_code=422,
-                detail="Legacy .doc conversion requires LibreOffice. Convert to .docx first.",
+                detail=(
+                    "Could not convert legacy .doc file. "
+                    "Tried: (1) doc2docx via MS Word COM, (2) LibreOffice headless. "
+                    "Please convert to .docx manually and re-upload."
+                ),
             )
         tmp_path = converted
 

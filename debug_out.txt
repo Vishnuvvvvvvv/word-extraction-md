@@ -1,0 +1,68 @@
+﻿=== python-docx list items (text ΓåÆ ilvl) ===
+
+Total docx list items: 0
+
+=== Markdown list items ===
+Total md list items: 57
+
+=== Items in DOCX but NOT matched in MD ===
+Missed: 0/0
+
+=== Items in MD but NOT in DOCX level_map ===
+  UNMATCHED: repr='PDF is the most widely used document format worldwide.'
+  UNMATCHED: repr='DOCX is the default format for Microsoft Word 2007 and later.'
+  UNMATCHED: repr='RTF provides cross-platform text formatting compatibility.'
+  UNMATCHED: repr='TXT is the simplest document format with no formatting.'
+  UNMATCHED: repr='ODT is the open-source OpenDocument Text format.'
+  UNMATCHED: repr='EPUB is designed for reflowable electronic publications.'
+  UNMATCHED: repr='Open the document in your preferred word processor.'
+  UNMATCHED: repr='Review the formatting and structure of each section.'
+  UNMATCHED: repr='Extract the text content using a document parsing library.'
+  UNMATCHED: repr='Validate that all list items are detected and properly ordered.'
+  UNMATCHED: repr='Check that nested lists maintain their indentation hierarchy.'
+  UNMATCHED: repr='Export the document to another format and compare the output.'
+  UNMATCHED: repr='Run automated tests to verify list extraction accuracy.'
+  UNMATCHED: repr='Document any formatting differences in the conversion report.'
+  UNMATCHED: repr='Document Formats'
+  UNMATCHED: repr='Text-based formats'
+  UNMATCHED: repr='TXT ΓÇö Plain text with no formatting'
+  UNMATCHED: repr='CSV ΓÇö Comma-separated tabular data'
+  UNMATCHED: repr='Markdown ΓÇö Lightweight markup for documentation'
+  UNMATCHED: repr='Rich formats'
+  UNMATCHED: repr='DOCX ΓÇö Microsoft Word documents'
+  UNMATCHED: repr='PDF ΓÇö Portable Document Format'
+  UNMATCHED: repr='RTF ΓÇö Rich Text Format'
+  UNMATCHED: repr='Presentation formats'
+  UNMATCHED: repr='PPTX ΓÇö Microsoft PowerPoint'
+  UNMATCHED: repr='ODP ΓÇö OpenDocument Presentation'
+  UNMATCHED: repr='Image Formats'
+  UNMATCHED: repr='Raster images'
+  UNMATCHED: repr='JPEG ΓÇö Lossy compression for photographs'
+  UNMATCHED: repr='PNG ΓÇö Lossless compression with transparency'
+  UNMATCHED: repr='WebP ΓÇö Modern web-optimized format'
+  UNMATCHED: repr='Vector images'
+  UNMATCHED: repr='SVG ΓÇö Scalable Vector Graphics for web'
+  UNMATCHED: repr='EPS ΓÇö Encapsulated PostScript for print'
+  UNMATCHED: repr='Prepare the development environment'
+  UNMATCHED: repr='Install the required programming language runtime'
+  UNMATCHED: repr='Install the document processing library'
+  UNMATCHED: repr='Create a new project directory'
+  UNMATCHED: repr='Load and parse the document'
+  UNMATCHED: repr='Open the DOCX file using the library API'
+  UNMATCHED: repr='Iterate through the document body elements'
+  UNMATCHED: repr='Identify paragraphs, tables, and other content types'
+  UNMATCHED: repr='Extract and process content'
+  UNMATCHED: repr='Extract text from each paragraph'
+  UNMATCHED: repr='Parse tables into structured data'
+  UNMATCHED: repr='Extract images and embedded media'
+  UNMATCHED: repr='Validate and export results'
+  UNMATCHED: repr='Compare extracted content against expected output'
+  UNMATCHED: repr='Generate a report of any discrepancies'
+  UNMATCHED: repr='Export results to the target format'
+  UNMATCHED: repr='List detection: Distinguishing between bulleted lists, numbered lists, and inden'
+  UNMATCHED: repr='Nesting depth: Multi-level lists use numbering definition references that map ab'
+  UNMATCHED: repr="Style preservation: Converting lists to HTML or Markdown requires mapping Word's"
+  UNMATCHED: repr="Inspect each paragraph's numbering properties to determine if it belongs to a li"
+  UNMATCHED: repr='Group consecutive list paragraphs by their numbering ID to identify list boundar'
+  UNMATCHED: repr='Map the numbering level to the appropriate output format (e.g., <ul>/<ol> nestin'
+  UNMATCHED: repr='Preserve any inline formatting (bold, italic, hyperlinks) within list items.'
